@@ -1,101 +1,49 @@
-<html>
- <head>
-  <meta charset='utf-8'>
-  <title>Minecraft Classic</title>
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-MENBM6GSNY"></script><script>function gtag(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],gtag("js",new Date),gtag("config","G-MENBM6GSNY")</script>
-  <style>
-html, body {
- height: 100%;
- width: 100%;
- margin: 0px;
-}
+<!doctype html>
+<html class="no-js" lang="sv-SE" prefix="og: http://ogp.me/ns#">
+    <head>
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Minecraft Classic</title>
+    <script src="/js/all.js"></script>
 
-body {
- background: #111 url(https://cdn.jsdelivr.net/gh/nurimoores/clawapps@c256f90f297143497e6f61dba4571701658e07a1/classic/bg_main.png);
-}
+        <meta charset="UTF-8">
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
+        <link href="assets/css/style.css" rel="stylesheet">
+    </head>
+    
+    <body>
+        <div class="page-content">
+            <main role="main" class="u-main"></main>
+        </div>
+        
+        <div id="hide">
+            <textarea class="js-copytextarea">url_to_copy</textarea>
+        </div>
 
-canvas {
-  height: 100vh; 
-  width: 100vw; 
- background: #000;
- display: block;
- box-shadow: 0 3px 5px rgba(0,0,0,.4);
- border-radius: 4px;
- margin: auto;
- position: absolute;
- top: 0;
- bottom: 0;
- left: 0;
- right: 0;
-}
+        <div id="version"></div>
+        <div id="hotbar"></div>
+        <div id="previewWindow"></div>
+        <div id="chat"></div>
+        <div id="menu"></div>
+        <div id="progress"></div>
+        <div id="overlay"></div>
+        <div id="mobile">
+            <div id="text_vertical">
+                <p><h2>Sorry!</h2></p>
+                <p>This version of Minecraft<br>requires a keyboard.</p>
+                <p>Please try again on another device.</p></div>
+            </div>
 
-span {
- font: Bold 18px Calibri;
- color: #F67;
- text-shadow: 1px 1px 5px rgba(0,0,0,.5);
- position: absolute;
- left: 10px;
- bottom: 10px;
-}
-
-@media only screen and (min-width: 1078px) {
- canvas {
-  width: 100vw;
-  height: 100vh;
- }
-}
-  </style>
- </head>
- <body>
-  <script async src='https://cdn.jsdelivr.net/gh/nurimoores/clawapps@c256f90f297143497e6f61dba4571701658e07a1/classic/uinitwasm.js'></script>
-  <script>
-var add_ele = (node_name, parent, attributes) => Object.assign(parent.appendChild(document.createElement(node_name)), attributes),
- canvas = add_ele('canvas', document.body, {
-  width: 1300,
-  height: 740,
- }),
- log = add_ele('span', document.body, {});
-
-canvas.focus();
-canvas.addEventListener('webglcontextlost', event => location.reload());
-canvas.addEventListener('contentmenu', event => event.preventDefault());
-canvas.addEventListener('click', () => {
- window.focus();
- canvas.focus();
- window.__requestPointerLock(canvas);
-});
-
-
-var Module = {
- preRun: [ () => {
-  addRunDependency('load-idb');
-  FS.mkdir('/classicube');
-  FS.mount(IDBFS, {}, '/classicube');
-  FS.syncfs(true, err => {
-   assert(!err); 
-   removeRunDependency('load-idb');
-  });
- } ],
- postRun: [],
- arguments: [ 'No' ],
- print: console.log,
- printErr: console.error,
- canvas: canvas,
- setStatus: (...text) => log.innerHTML = text.join(' '),
- totalDependencies: 0,
- monitorRunDependencies(left){
-  this.totalDependencies = Math.max(this.totalDependencies, left);
-  Module.setStatus(left ? 'Preparing... (' + (this.totalDependencies-left) + '/' + this.totalDependencies + ')' : 'All downloads complete.');
- },
-};
-
-Module.setStatus('Downloading...');
-
-window.addEventListener('error', err => {
- Module.setStatus('Exception thrown, see JavaScript console');
- Module.setStatus = (...text) => log.innerHTML ='[post-exception status] ' + text.join(' ');
-});
-  </script>
-  <script src="https://cdn.jsdelivr.net/gh/st39/sdk@main/api.js"></script>
- </body>
+            <div id="webgl_webrtc">
+            
+            <div id="text_vertical">
+                <p><h2>Sorry!</h2></p>
+                <p>It seems like your browser doesn't support<br>WebGL or WebRTC that is required to run this game.<p>
+                <p>Find a new one at<a href="https://browsehappy.com" target="_blank">https://browsehappy.com</a></p>
+            </div>
+        </div>
+        
+        <script src="assets/js/app.js"></script>
+    </body>
 </html>
