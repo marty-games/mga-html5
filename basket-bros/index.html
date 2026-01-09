@@ -4,11 +4,12 @@
 <head>
     <meta charset="utf-8" />
     <title>Basket Bros</title>
+    <base href="https://cdn.jsdelivr.net/gh/marty-games/mga-html5@main/basket-bros/">
     <meta name="robots" content="noindex,nofollow" />
     <meta name="description" content="Online multiplayer basketball! Dunk all over your bros!" />
     <meta id="viewport" name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <link rel="shortcut icon" type="image/png" href="./favicon.png" />
-    <script type="text/javascript" src="./BasketBros.js?v=1"></script> 
+    <script type="text/javascript" src="./BasketBros.js?v=1"></script>
     <script>
         window.addEventListener(
             "touchmove",
@@ -70,7 +71,7 @@
             -ms-animation: spin1 2s infinite linear;
             animation: spin1 2s infinite linear;
         }
-    </style> 
+    </style>
 
     <script>
         //Interstitial ad available event
@@ -148,7 +149,7 @@
                 });
             }
         }
-    </script> 
+    </script>
 </head>
 
 <body style="overflow: hidden;">
@@ -191,10 +192,10 @@
         <div id="basketbros-io_player_300x600" style="visibility: hidden; width: 300px; height: 600px; display: none; position: absolute; top: 30px; left: 30px; z-index: 100;"></div>
         <div id="basketbros-io_300x600_m" style="visibility: hidden; width: 300px; height: 600px; display: none; position: absolute; top: 30px; left: 30px; z-index: 100;"></div>
         <div id="basketbros-io_728x90" style="visibility: hidden; width: 728px; height: 90px; display: none; position: absolute; top: 30px; left: 30px; z-index: 100;"></div>
-    </div>  
-     
+    </div>
 
-     
+
+
     <script>
         var lastRefresh = 0;
 
@@ -386,7 +387,7 @@
             req.send();
         }
 
-        function SendEvent(theEvent, theAction) { 
+        function SendEvent(theEvent, theAction) {
             updateStatus(true);
             //console.log("Sending event: " + theEvent + "/" + theAction);
         }
