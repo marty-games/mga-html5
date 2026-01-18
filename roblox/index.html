@@ -2,21 +2,21 @@
 <html lang="en">
 
 <head>
-    <base href="https://educationbluesky.com/apps/a/19900/">
+    <base href="https://164.ip.nowgg.fun/apps/a/19900/b.html">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, shrink-to-fit=no, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" data-next-head="" />
-    <meta name="msapplication-TileImage" content="https://cdn.now.gg/apps-content/common/img/favicon.ico" data-next-head="" />
+    <meta name="msapplication-TileImage" content="https://cdn.nowgg.fun/apps-content/common/img/favicon.ico" data-next-head="" />
     <meta charSet="UTF-8" data-next-head="" />
     <meta name="HandheldFriendly" content="true" data-next-head="" />
-    <link rel="preload" href="/7/_next/static/media/black-bg.6fdd970d.jpg" as="image" fetchPriority="high" data-next-head="" />
-    <meta name="robots" content="noindex,nofollow,noarchive" data-next-head="" />
+    <link rel="preload" href="/2/_next/static/media/black-bg.6fdd970d.jpg" as="image" fetchpriority="high" data-next-head="" />
+    <meta name="robots" content="index,follow" data-next-head="" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" data-next-head="" />
-    <link rel="canonical" href="https://educationbluesky.com/apps/undefined/undefined/undefined.html" data-next-head="" />
+    <link rel="canonical" href="https://now.gg/apps/undefined/undefined/undefined.html" data-next-head="" />
     <meta name="description" data-next-head="" />
     <meta name="baidu-site-verification" content="code-y42E1spUr0" data-next-head="" />
     <meta name="theme-color" content="#FF42A5" data-next-head="" />
     <meta property="og:locale" content="en" data-next-head="" />
     <meta property="og:description" data-next-head="" />
-    <meta property="og:url" content="https://educationbluesky.com/apps/undefined/undefined/undefined.html" data-next-head="" />
+    <meta property="og:url" content="https://now.gg/apps/undefined/undefined/undefined.html" data-next-head="" />
     <meta property="og:site_name" content="now.gg" data-next-head="" />
     <meta property="twitter:title" data-next-head="" />
     <meta name="twitter:description" data-next-head="" />
@@ -28,13 +28,13 @@
     <meta property="og:image:type" content="image/jpeg" data-next-head="" />
     <meta name="twitter:card" content="summary_large_image" data-next-head="" />
     <meta name="twitter:image" data-next-head="" />
-    <link rel="alternate" href="https://educationbluesky.com/apps/undefined/undefined/undefined.html" hrefLang="x-default" data-next-head="" />
+    <link rel="alternate" href="https://now.gg/apps/undefined/undefined/undefined.html" hrefLang="x-default" data-next-head="" />
     <link rel="apple-touch-icon" href="https://cdn.now.gg/apps-content/default/images/Icon_512.png" data-next-head="" />
     <script type="application/ld+json" data-next-head="">
         {
             "@context": "https://schema.org",
             "@type": "MobileApplication",
-            "url": "https://educationbluesky.com/apps/undefined/undefined/undefined.html",
+            "url": "https://now.gg/apps/undefined/undefined/undefined.html",
             "operatingSystem": "Windows, Mac, Android, iOS",
             "applicationCategory": "GameApplication, MultimediaApplication",
             "aggregateRating": {
@@ -59,7 +59,7 @@
                 "@type": "ListItem",
                 "position": 1,
                 "name": "Home",
-                "item": "https://educationbluesky.com"
+                "item": "https://now.gg"
             }, {
                 "@type": "ListItem",
                 "position": 2,
@@ -73,7 +73,7 @@
             }, {
                 "@type": "ListItem",
                 "position": 4,
-                "item": "https://educationbluesky.com/apps/undefined/undefined/undefined.html"
+                "item": "https://now.gg/apps/undefined/undefined/undefined.html"
             }]
         }
     </script>
@@ -114,7 +114,7 @@
                     const urlWithoutHash = window.location.href.split('#')[0];
                     window.history.replaceState(null, '', urlWithoutHash);
                 }
-                window.performance && window.performance.mark && window.performance.mark('first-load-script-starting');
+                window?.performance && window?.performance?.mark && window?.performance?.mark('first-load-script-starting');
             } catch (e) {}
             window.googletag = window.googletag || {
                 cmd: []
@@ -123,7 +123,7 @@
                 cmd: []
             };
             window.nggParams = {};
-            console.log("App Version: berlin-v1.48.200_nc-8528-arm.6");
+            console.log("App Version: berlin-v1.49.0-arm.1");
             try {
                 window.console.log = function() {};
                 window.console.warn = function() {};
@@ -200,12 +200,12 @@
 
                 window.nggParams["fe_uaSessionId"] = sessionStorage.getItem("fe_uaSessionId");
 
-                let pageAccessedByReload = (window && window.performance &&
-                    (window.performance.navigation && window.performance.navigation.type === 1) ||
-                    window.performance
-                    .getEntriesByType('navigation')
-                    .map((nav) => nav.type)
-                    .includes('reload')
+                let pageAccessedByReload = (window && window?.performance &&
+                    (window?.performance?.navigation && window?.performance?.navigation?.type === 1) ||
+                    window?.performance
+                    ?.getEntriesByType('navigation')
+                    ?.map((nav) => nav.type)
+                    ?.includes('reload')
                 );
 
                 let newVisitId = "visitid-" + nanoid();
@@ -818,11 +818,11 @@
 
                 window.timeSinceBootstrapMsecs = timeSinceNavMsecs;
 
-                fetch("/oapi/7/play/v1/reportEvent", {
+                fetch("/oapi/2/play/v1/reportEvent", {
                     method: "POST",
                     headers: {
                         "Content-Type": "application/json",
-                        "x-ngg-fe-version": "berlin-v1.48.200_nc-8528-arm.6",
+                        "x-ngg-fe-version": "berlin-v1.49.0-arm.1",
                         "x-ngg-skip-evar-check": "false",
                     },
                     body: JSON.stringify(payload)
@@ -872,30 +872,30 @@
                     });
                 } catch (e) {}
             })()
-            window.performance && window.performance.mark && window.performance.mark('first-load-script-ended');
+            window?.performance && window?.performance?.mark && window?.performance?.mark('first-load-script-ended');
         }
     </script>
-    <link rel="preload" href="/7/play/assets/_next/static/css/styles.d6c7be162965db05.css" as="style" />
-    <link rel="stylesheet" href="/7/play/assets/_next/static/css/styles.d6c7be162965db05.css" data-n-g="" /><noscript data-n-css=""></noscript>
-    <script defer="" nomodule="" src="/7/play/assets/_next/static/chunks/polyfills-42372ed130431b0a.js"></script>
-    <script defer="" src="/7/play/assets/_next/static/chunks/3328.a75a54192958bc5e.js"></script>
-    <script defer="" src="/7/play/assets/_next/static/chunks/5912.a71abe42116fd3ec.js"></script>
-    <script defer="" src="/7/play/assets/_next/static/chunks/3366.a38d4d60a913ba00.js"></script>
-    <script defer="" src="/7/play/assets/_next/static/chunks/7064.824ceeebd139f621.js"></script>
-    <script defer="" src="/7/play/assets/_next/static/chunks/3501.225f10cb5a1e0124.js"></script>
-    <script defer="" src="/7/play/assets/_next/static/chunks/1484.9e6da948a7bbab85.js"></script>
-    <script defer="" src="/7/play/assets/_next/static/chunks/8842.7417349ea2288bc8.js"></script>
-    <script defer="" src="/7/play/assets/_next/static/chunks/8938.013a2d1b4308ea7c.js"></script>
-    <script defer="" src="/7/play/assets/_next/static/chunks/9311.5d58bad71d9061eb.js"></script>
-    <script defer="" src="/7/play/assets/_next/static/chunks/3470.ebbaa895b3f259f2.js"></script>
-    <script defer="" src="/7/play/assets/_next/static/chunks/9682.0e13628e0ff13810.js"></script>
-    <script defer="" src="/7/play/assets/_next/static/chunks/6865.f8562e2f2865f870.js"></script>
-    <script src="/7/play/assets/_next/static/chunks/webpack-15aedfc6e1c5d87d.js" defer=""></script>
-    <script src="/7/play/assets/_next/static/chunks/main-4f884091f83cebb1.js" defer=""></script>
-    <script src="/7/play/assets/_next/static/chunks/pages/_app-adc3a247dc5bf51b.js" defer=""></script>
-    <script src="/7/play/assets/_next/static/chunks/pages/apps/%5B...index%5D-672e0cda0dc9e298.js" defer=""></script>
-    <script src="/7/play/assets/_next/static/e3K_i4VDrlKo3KdzymQw0/_buildManifest.js" defer=""></script>
-    <script src="/7/play/assets/_next/static/e3K_i4VDrlKo3KdzymQw0/_ssgManifest.js" defer=""></script>
+    <link rel="preload" href="/2/play/assets/_next/static/css/styles.d6c7be162965db05.css" as="style" />
+    <link rel="stylesheet" href="/2/play/assets/_next/static/css/styles.d6c7be162965db05.css" data-n-g="" /><noscript data-n-css=""></noscript>
+    <script defer="" nomodule="" src="/2/play/assets/_next/static/chunks/polyfills-42372ed130431b0a.js"></script>
+    <script defer="" src="/2/play/assets/_next/static/chunks/3328.a75a54192958bc5e.js"></script>
+    <script defer="" src="/2/play/assets/_next/static/chunks/5912.a71abe42116fd3ec.js"></script>
+    <script defer="" src="/2/play/assets/_next/static/chunks/3366.04fdba19c7e83438.js"></script>
+    <script defer="" src="/2/play/assets/_next/static/chunks/7064.ed4a4417eb034755.js"></script>
+    <script defer="" src="/2/play/assets/_next/static/chunks/9778.dade0eadc25e7b6b.js"></script>
+    <script defer="" src="/2/play/assets/_next/static/chunks/1484.0090cfaff0fadb48.js"></script>
+    <script defer="" src="/2/play/assets/_next/static/chunks/8842.7417349ea2288bc8.js"></script>
+    <script defer="" src="/2/play/assets/_next/static/chunks/8938.04b17fcb737575e7.js"></script>
+    <script defer="" src="/2/play/assets/_next/static/chunks/9311.5d58bad71d9061eb.js"></script>
+    <script defer="" src="/2/play/assets/_next/static/chunks/3470.f2d42dedc8cea3af.js"></script>
+    <script defer="" src="/2/play/assets/_next/static/chunks/9682.0e13628e0ff13810.js"></script>
+    <script defer="" src="/2/play/assets/_next/static/chunks/6865.f8562e2f2865f870.js"></script>
+    <script src="/2/play/assets/_next/static/chunks/webpack-fcb1a2d5c6cf741a.js" defer=""></script>
+    <script src="/2/play/assets/_next/static/chunks/main-4f884091f83cebb1.js" defer=""></script>
+    <script src="/2/play/assets/_next/static/chunks/pages/_app-2f1816b8284279b6.js" defer=""></script>
+    <script src="/2/play/assets/_next/static/chunks/pages/apps/%5B...index%5D-927b8564ac4c49eb.js" defer=""></script>
+    <script src="/2/play/assets/_next/static/BWsvAWfDUQlgJuLp5ef7M/_buildManifest.js" defer=""></script>
+    <script src="/2/play/assets/_next/static/BWsvAWfDUQlgJuLp5ef7M/_ssgManifest.js" defer=""></script>
     <style data-styled="" data-styled-version="5.3.11">
         .jzhjsC {
             display: -webkit-box;
@@ -1372,7 +1372,7 @@
         }
 
         /*!sc*/
-        data-styled.g530[id="sc-d9753f79-0"] {
+        data-styled.g540[id="sc-d9753f79-0"] {
             content: "epLODS,"
         }
 
@@ -1385,12 +1385,12 @@
         }
 
         /*!sc*/
-        data-styled.g531[id="sc-d9753f79-1"] {
+        data-styled.g541[id="sc-d9753f79-1"] {
             content: "FUMIF,"
         }
 
         /*!sc*/
-        .gvlZHF {
+        .iatfom {
             display: -webkit-box;
             display: -webkit-flex;
             display: -ms-flexbox;
@@ -1417,19 +1417,19 @@
         }
 
         /*!sc*/
-        .gvlZHF:hover {
+        .iatfom:hover {
             background: rgba(255, 255, 255, 0.4);
         }
 
         /*!sc*/
         @media only screen and (max-width:767px) {
-            .gvlZHF {
+            .iatfom {
                 display: none;
             }
         }
 
         /*!sc*/
-        .dGKqcH {
+        .eTVvTk {
             display: -webkit-box;
             display: -webkit-flex;
             display: -ms-flexbox;
@@ -1459,24 +1459,24 @@
         }
 
         /*!sc*/
-        .dGKqcH:hover {
+        .eTVvTk:hover {
             background: rgba(255, 255, 255, 0.4);
         }
 
         /*!sc*/
         @media only screen and (max-width:767px) {
-            .dGKqcH {
+            .eTVvTk {
                 display: none;
             }
         }
 
         /*!sc*/
-        data-styled.g644[id="sc-c0c73874-0"] {
-            content: "gvlZHF,dGKqcH,"
+        data-styled.g654[id="sc-f0278210-0"] {
+            content: "iatfom,eTVvTk,"
         }
 
         /*!sc*/
-        .cbOYpP {
+        .hEUfFg {
             position: absolute;
             right: auto;
             top: 45%;
@@ -1495,28 +1495,28 @@
         }
 
         /*!sc*/
-        .cbOYpP:hover {
+        .hEUfFg:hover {
             background: rgba(0, 0, 0, 0.4);
         }
 
         /*!sc*/
         @media only screen and (max-width:768px) {
-            .cbOYpP {
+            .hEUfFg {
                 display: block;
-                border: 1px solid #ff42a5;
+                border: 1px solid #00ff9d;
                 background: #111111;
             }
         }
 
         /*!sc*/
         @media only screen and (max-width:767px) {
-            .cbOYpP {
+            .hEUfFg {
                 display: none;
             }
         }
 
         /*!sc*/
-        .hXaiGn {
+        .la-DZpE {
             position: absolute;
             right: 0;
             top: 45%;
@@ -1535,29 +1535,29 @@
         }
 
         /*!sc*/
-        .hXaiGn:hover {
+        .la-DZpE:hover {
             background: rgba(0, 0, 0, 0.4);
         }
 
         /*!sc*/
         @media only screen and (max-width:768px) {
-            .hXaiGn {
+            .la-DZpE {
                 display: block;
-                border: 1px solid #ff42a5;
+                border: 1px solid #00ff9d;
                 background: #111111;
             }
         }
 
         /*!sc*/
         @media only screen and (max-width:767px) {
-            .hXaiGn {
+            .la-DZpE {
                 display: none;
             }
         }
 
         /*!sc*/
-        data-styled.g656[id="sc-c0c73874-12"] {
-            content: "cbOYpP,hXaiGn,"
+        data-styled.g666[id="sc-f0278210-12"] {
+            content: "hEUfFg,la-DZpE,"
         }
 
         /*!sc*/
@@ -1630,7 +1630,7 @@
         }
 
         /*!sc*/
-        data-styled.g957[id="sc-44a3abb2-0"] {
+        data-styled.g969[id="sc-44a3abb2-0"] {
             content: "btdVGI,ilhMin,"
         }
 
@@ -1657,7 +1657,7 @@
         }
 
         /*!sc*/
-        data-styled.g958[id="sc-44a3abb2-1"] {
+        data-styled.g970[id="sc-44a3abb2-1"] {
             content: "dPyTKq,"
         }
 
@@ -1672,7 +1672,7 @@
         }
 
         /*!sc*/
-        data-styled.g959[id="sc-44a3abb2-2"] {
+        data-styled.g971[id="sc-44a3abb2-2"] {
             content: "ggBESx,"
         }
 
@@ -1691,7 +1691,7 @@
         }
 
         /*!sc*/
-        data-styled.g1140[id="sc-37a20de2-0"] {
+        data-styled.g1144[id="sc-37a20de2-0"] {
             content: "KGrAb,"
         }
 
@@ -1706,7 +1706,7 @@
         }
 
         /*!sc*/
-        data-styled.g1141[id="sc-37a20de2-1"] {
+        data-styled.g1145[id="sc-37a20de2-1"] {
             content: "hVUUyG,"
         }
 
@@ -1719,7 +1719,7 @@
         }
 
         /*!sc*/
-        data-styled.g1143[id="sc-37a20de2-3"] {
+        data-styled.g1147[id="sc-37a20de2-3"] {
             content: "elhVQo,"
         }
 
@@ -1735,7 +1735,7 @@
         }
 
         /*!sc*/
-        data-styled.g1144[id="sc-37a20de2-4"] {
+        data-styled.g1148[id="sc-37a20de2-4"] {
             content: "jZBivD,"
         }
 
@@ -1771,7 +1771,7 @@
             position: absolute;
             width: 40px;
             height: 40px;
-            background: #ff42a5;
+            background: #00ff9d;
             border-radius: 50%;
         }
 
@@ -1789,7 +1789,7 @@
         }
 
         /*!sc*/
-        data-styled.g1145[id="sc-37a20de2-5"] {
+        data-styled.g1149[id="sc-37a20de2-5"] {
             content: "VHEbE,"
         }
 
@@ -1809,7 +1809,7 @@
         }
 
         /*!sc*/
-        data-styled.g1146[id="sc-1a1e5530-0"] {
+        data-styled.g1150[id="sc-1a1e5530-0"] {
             content: "hIfipl,"
         }
 
@@ -1834,7 +1834,7 @@
         }
 
         /*!sc*/
-        data-styled.g1148[id="sc-5f46476e-0"] {
+        data-styled.g1152[id="sc-5f46476e-0"] {
             content: "kfNCdF,"
         }
 
@@ -1869,7 +1869,7 @@
         }
 
         /*!sc*/
-        data-styled.g1213[id="sc-7f59e304-5"] {
+        data-styled.g1255[id="sc-7f59e304-5"] {
             content: "tdHWD,"
         }
 
@@ -1885,7 +1885,7 @@
         }
 
         /*!sc*/
-        data-styled.g1215[id="sc-7f59e304-7"] {
+        data-styled.g1257[id="sc-7f59e304-7"] {
             content: "bKCkYJ,"
         }
 
@@ -1907,7 +1907,7 @@
         }
 
         /*!sc*/
-        data-styled.g1216[id="sc-7f59e304-8"] {
+        data-styled.g1258[id="sc-7f59e304-8"] {
             content: "hjFUUj,"
         }
 
@@ -1948,7 +1948,7 @@
         }
 
         /*!sc*/
-        data-styled.g1217[id="sc-7f59e304-9"] {
+        data-styled.g1259[id="sc-7f59e304-9"] {
             content: "idlspL,"
         }
 
@@ -1959,7 +1959,7 @@
         }
 
         /*!sc*/
-        data-styled.g1218[id="sc-7f59e304-10"] {
+        data-styled.g1260[id="sc-7f59e304-10"] {
             content: "jMHWF,"
         }
 
@@ -1979,7 +1979,7 @@
         }
 
         /*!sc*/
-        data-styled.g1220[id="sc-7f59e304-12"] {
+        data-styled.g1262[id="sc-7f59e304-12"] {
             content: "cnMRbQ,"
         }
 
@@ -1989,7 +1989,7 @@
         }
 
         /*!sc*/
-        data-styled.g1223[id="sc-7f59e304-15"] {
+        data-styled.g1265[id="sc-7f59e304-15"] {
             content: "cnVllA,"
         }
 
@@ -2016,7 +2016,7 @@
         }
 
         /*!sc*/
-        data-styled.g1224[id="sc-7f59e304-16"] {
+        data-styled.g1266[id="sc-7f59e304-16"] {
             content: "cLjjNt,"
         }
 
@@ -2053,7 +2053,7 @@
         }
 
         /*!sc*/
-        data-styled.g1225[id="sc-7f59e304-17"] {
+        data-styled.g1267[id="sc-7f59e304-17"] {
             content: "MelFP,"
         }
 
@@ -2085,7 +2085,7 @@
         }
 
         /*!sc*/
-        data-styled.g1228[id="sc-7f59e304-20"] {
+        data-styled.g1270[id="sc-7f59e304-20"] {
             content: "dSWedn,"
         }
 
@@ -2105,7 +2105,7 @@
         }
 
         /*!sc*/
-        data-styled.g1229[id="sc-7f59e304-21"] {
+        data-styled.g1271[id="sc-7f59e304-21"] {
             content: "gdrLfd,"
         }
 
@@ -2130,7 +2130,7 @@
         }
 
         /*!sc*/
-        data-styled.g1230[id="sc-7f59e304-22"] {
+        data-styled.g1272[id="sc-7f59e304-22"] {
             content: "kGHlgu,"
         }
 
@@ -2142,7 +2142,7 @@
         }
 
         /*!sc*/
-        data-styled.g1235[id="sc-978a7a9c-0"] {
+        data-styled.g1277[id="sc-978a7a9c-0"] {
             content: "jUWcJN,"
         }
 
@@ -2154,7 +2154,7 @@
         }
 
         /*!sc*/
-        data-styled.g1236[id="sc-978a7a9c-1"] {
+        data-styled.g1278[id="sc-978a7a9c-1"] {
             content: "dXMrre,"
         }
 
@@ -2256,7 +2256,7 @@
         }
 
         /*!sc*/
-        data-styled.g1242[id="sc-31f7ab6d-0"] {
+        data-styled.g1284[id="sc-31f7ab6d-0"] {
             content: "jMlUSs,"
         }
 
@@ -2339,7 +2339,7 @@
         }
 
         /*!sc*/
-        data-styled.g1243[id="sc-31f7ab6d-1"] {
+        data-styled.g1285[id="sc-31f7ab6d-1"] {
             content: "TUWaW,"
         }
 
@@ -2374,7 +2374,7 @@
         }
 
         /*!sc*/
-        data-styled.g1292[id="sc-keyframes-eoUyJr"] {
+        data-styled.g1296[id="sc-keyframes-eoUyJr"] {
             content: "eoUyJr,"
         }
 
@@ -2409,7 +2409,7 @@
         }
 
         /*!sc*/
-        data-styled.g1293[id="sc-keyframes-fEWCgj"] {
+        data-styled.g1297[id="sc-keyframes-fEWCgj"] {
             content: "fEWCgj,"
         }
 
@@ -2436,7 +2436,7 @@
         }
 
         /*!sc*/
-        data-styled.g1294[id="sc-keyframes-lbWRkT"] {
+        data-styled.g1298[id="sc-keyframes-lbWRkT"] {
             content: "lbWRkT,"
         }
 
@@ -2450,11 +2450,11 @@
     <div id="__next">
         <div class="lcpImgWrapper full-wh">
             <div class="lcpDiv"></div>
-            <div style="width:100%;height:100%;background-image:url(/7/_next/static/media/black-bg.6fdd970d.jpg);background-size:cover;background-position:center;background-repeat:repeat"></div>
+            <div style="width:100%;height:100%;background-image:url(/2/_next/static/media/black-bg.6fdd970d.jpg);background-size:cover;background-position:center;background-repeat:repeat"></div>
         </div>
         <section class="StyledLayout">
             <header class="sc-74ddd4db-0 gLZcnl">
-                <div class="sc-b5bac989-0 ifdeIN app-logo"><a href="https://now.gg"><img id="ng-logo" class="ngg-logo" width="120" height="30" src="/7/_next/static/media/nowgg-logo.2eda3eaf.svg" alt="now.gg Logo" style="width:165px;height:50px;margin:0" fetchPriority="low" /></a><i size="15" class="sc-a9d1dfcf-0 jzhjsC icon-info ngg-info-icon" style="cursor:pointer;padding:5px" id="ng-info"></i></div>
+                <div class="sc-b5bac989-0 ifdeIN app-logo"><a href="https://now.gg"><img id="ng-logo" class="ngg-logo" width="120" height="30" src="/2/_next/static/media/nowgg-logo.2eda3eaf.svg" alt="now.gg Logo" style="width:165px;height:50px;margin:0" fetchpriority="low" /></a><i size="15" class="sc-a9d1dfcf-0 jzhjsC icon-info ngg-info-icon" style="cursor:pointer;padding:5px" id="ng-info"></i></div>
                 <div style="display:flex;align-items:center;gap:8px"><span></span></div>
             </header>
             <div class="">
@@ -2467,18 +2467,18 @@
           
         ">
                                 <div class="StyledPreview"><video class="BgVideo" disablepictureinpicture="" disableremoteplayback="" muted="" playsinline="" preload="none" height="100%" width="100%" poster="https://cdn.now.gg/assets-opt/_next/image?url=https%3A%2F%2Fcdn.now.gg%2Fapps-content%2Fdefault%2Fimages%2FBanner_Landscape.jpg&amp;w=1200&amp;q=40">
-                                        <source type="video/mp4" src="https://cdn.now.gg/apps-content/default/launch-video/desktop/Launch_1920.mp4" />
+                                        <source type="video/mp4" src="/loading.mp4" />
                                     </video></div>
                                 <div class="HeroAppInfo landscape auto-h desktop-panel-layout">
                                     <div class="sc-7f59e304-5 tdHWD">
-                                        <div><span style="box-sizing:border-box;display:block;overflow:hidden;width:initial;height:initial;background:none;opacity:1;border:0;margin:0;padding:0;position:absolute;top:0;left:0;bottom:0;right:0"><img fetchPriority="high" alt="Play  Online" id="ng-unified-app-logo" sizes="100vw" srcSet="https://cdn.now.gg/assets-opt/_next/image?url=https%3A%2F%2Fcdn.now.gg%2Fassets-opt%2F_next%2Fimage%3Furl%3Dhttps%253A%252F%252Fcdn.now.gg%252Fapps-content%252Fdefault%252Fimages%252FIcon_512.png%26w%3D256%26q%3D80&amp;w=640&amp;q=70 640w, https://cdn.now.gg/assets-opt/_next/image?url=https%3A%2F%2Fcdn.now.gg%2Fassets-opt%2F_next%2Fimage%3Furl%3Dhttps%253A%252F%252Fcdn.now.gg%252Fapps-content%252Fdefault%252Fimages%252FIcon_512.png%26w%3D256%26q%3D80&amp;w=920&amp;q=70 920w, https://cdn.now.gg/assets-opt/_next/image?url=https%3A%2F%2Fcdn.now.gg%2Fassets-opt%2F_next%2Fimage%3Furl%3Dhttps%253A%252F%252Fcdn.now.gg%252Fapps-content%252Fdefault%252Fimages%252FIcon_512.png%26w%3D256%26q%3D80&amp;w=1440&amp;q=70 1440w" src="https://cdn.now.gg/assets-opt/_next/image?url=https%3A%2F%2Fcdn.now.gg%2Fassets-opt%2F_next%2Fimage%3Furl%3Dhttps%253A%252F%252Fcdn.now.gg%252Fapps-content%252Fdefault%252Fimages%252FIcon_512.png%26w%3D256%26q%3D80&amp;w=1440&amp;q=70" decoding="async" data-nimg="fill" class="app-logo" style="position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%;object-fit:cover" /></span></div>
+                                        <div><span style="box-sizing:border-box;display:block;overflow:hidden;width:initial;height:initial;background:none;opacity:1;border:0;margin:0;padding:0;position:absolute;top:0;left:0;bottom:0;right:0"><img fetchpriority="high" alt="Play  Online" id="ng-unified-app-logo" sizes="100vw" srcSet="https://cdn.now.gg/assets-opt/_next/image?url=https%3A%2F%2Fcdn.now.gg%2Fassets-opt%2F_next%2Fimage%3Furl%3Dhttps%253A%252F%252Fcdn.now.gg%252Fapps-content%252Fdefault%252Fimages%252FIcon_512.png%26w%3D256%26q%3D80&amp;w=640&amp;q=70 640w, https://cdn.now.gg/assets-opt/_next/image?url=https%3A%2F%2Fcdn.now.gg%2Fassets-opt%2F_next%2Fimage%3Furl%3Dhttps%253A%252F%252Fcdn.now.gg%252Fapps-content%252Fdefault%252Fimages%252FIcon_512.png%26w%3D256%26q%3D80&amp;w=920&amp;q=70 920w, https://cdn.now.gg/assets-opt/_next/image?url=https%3A%2F%2Fcdn.now.gg%2Fassets-opt%2F_next%2Fimage%3Furl%3Dhttps%253A%252F%252Fcdn.now.gg%252Fapps-content%252Fdefault%252Fimages%252FIcon_512.png%26w%3D256%26q%3D80&amp;w=1440&amp;q=70 1440w" src="https://cdn.now.gg/assets-opt/_next/image?url=https%3A%2F%2Fcdn.now.gg%2Fassets-opt%2F_next%2Fimage%3Furl%3Dhttps%253A%252F%252Fcdn.now.gg%252Fapps-content%252Fdefault%252Fimages%252FIcon_512.png%26w%3D256%26q%3D80&amp;w=1440&amp;q=70" decoding="async" data-nimg="fill" class="app-logo" style="position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%;object-fit:cover" /></span></div>
                                     </div>
                                     <div class="sc-7f59e304-21 gdrLfd">
                                         <h1 id="ng-unified-app-name" class="sc-3c372983-16 sc-7f59e304-7 kkvPsj bKCkYJ"></h1>
                                         <div class="sc-7f59e304-8 hjFUUj fade-out-element ">
                                             <div class="sc-7f59e304-9 idlspL"><svg width="16" height="17" viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                     <path d="M6.59638 1.39913C6.79613 1.12595 7.20387 1.12595 7.40362 1.39913L9.32199 4.02281C9.50713 4.27601 9.76698 4.4648 10.065 4.56263L13.1531 5.57636C13.4746 5.68191 13.6006 6.0697 13.4025 6.34408L11.5001 8.97933C11.3165 9.23365 11.2172 9.53912 11.2163 9.85278L11.2064 13.103C11.2054 13.4414 10.8755 13.6811 10.5534 13.5775L7.4592 12.5825C7.1606 12.4864 6.8394 12.4864 6.5408 12.5825L3.44664 13.5775C3.12447 13.6811 2.7946 13.4414 2.79357 13.103L2.78373 9.85278C2.78278 9.53912 2.68353 9.23364 2.49993 8.97933L0.597476 6.34408C0.399392 6.0697 0.525393 5.68191 0.846925 5.57636L3.935 4.56263C4.23302 4.4648 4.49287 4.27601 4.67801 4.02281L6.59638 1.39913Z" fill="#FFC32A" stroke="#FFC32A"></path>
-                                                </svg><span id="ng-unified-app-rating" class="sc-3c372983-31 sc-7f59e304-10 fKrkQv jMHWF"></span></div><a href="https://educationbluesky.com/games/undefined.html" id="ng-unified-app-genre" class="sc-7f59e304-12 cnMRbQ"></a>
+                                                </svg><span id="ng-unified-app-rating" class="sc-3c372983-31 sc-7f59e304-10 fKrkQv jMHWF"></span></div><a href="https://now.gg/games/undefined.html" id="ng-unified-app-genre" class="sc-7f59e304-12 cnMRbQ"></a>
                                         </div>
                                     </div>
                                     <div class="PlayBtnWrap" style="margin:0 auto"><button class="Button fade-out-element loading" id="ng-getting-ready-btn">
@@ -2521,11 +2521,11 @@
                 <div class="xES0bjZoI7ksV3Oz">
                     <section class="ComponentMainDiv">
                         <div class="page-content">
-                            <h3 class="Heading"><a href="https://educationbluesky.com/games.html">Popular Games</a></h3>
+                            <h3 class="Heading"><a href="https://now.gg/games.html">Popular Games</a></h3>
                             <div class="GameListWrap">
                                 <ul class="GameGrid_wrap " id="ng-unified-popular-games-list">
-                                    <li class="Tile_wrap default"><a class="Tile default " href="https://educationbluesky.com/apps/now-gg/51946/sup-ai.html"><span class="TileImg default">
-                                                <p></p><span style="box-sizing:border-box;display:block;overflow:hidden;width:initial;height:initial;background:none;opacity:1;border:0;margin:0;padding:0;position:absolute;top:0;left:0;bottom:0;right:0"><img alt="Play wsup.ai - Chat with AI Characters Online online on now.gg" fetchPriority="low" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" decoding="async" data-nimg="fill" style="position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%;object-fit:cover" /><noscript><img alt="Play wsup.ai - Chat with AI Characters Online online on now.gg" fetchPriority="low" loading="lazy" decoding="async" data-nimg="fill" style="position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%;object-fit:cover" sizes="
+                                    <li class="Tile_wrap default"><a class="Tile default " href="https://now.gg/apps/now-gg/51946/sup-ai.html"><span class="TileImg default">
+                                                <p></p><span style="box-sizing:border-box;display:block;overflow:hidden;width:initial;height:initial;background:none;opacity:1;border:0;margin:0;padding:0;position:absolute;top:0;left:0;bottom:0;right:0"><img alt="Play wsup.ai - Chat with AI Characters Online online on now.gg" fetchpriority="low" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" decoding="async" data-nimg="fill" style="position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%;object-fit:cover" /><noscript><img alt="Play wsup.ai - Chat with AI Characters Online online on now.gg" fetchpriority="low" loading="lazy" decoding="async" data-nimg="fill" style="position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%;object-fit:cover" sizes="
                     (max-width: 719px) 64px,
                     (max-width: 1599px) and (min-width: 720px) 128px,
                     256px
@@ -2537,8 +2537,8 @@
                                                 </button>
                                             </div>
                                         </a></li>
-                                    <li class="Tile_wrap default"><a class="Tile default " href="https://educationbluesky.com/apps/80-anime-vanguards/19908/80-anime-vanguards.html"><span class="TileImg default">
-                                                <p></p><span style="box-sizing:border-box;display:block;overflow:hidden;width:initial;height:initial;background:none;opacity:1;border:0;margin:0;padding:0;position:absolute;top:0;left:0;bottom:0;right:0"><img alt="Play 80 Anime Vanguards online on now.gg" fetchPriority="low" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" decoding="async" data-nimg="fill" style="position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%;object-fit:cover" /><noscript><img alt="Play 80 Anime Vanguards online on now.gg" fetchPriority="low" loading="lazy" decoding="async" data-nimg="fill" style="position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%;object-fit:cover" sizes="
+                                    <li class="Tile_wrap default"><a class="Tile default " href="https://now.gg/apps/80-anime-vanguards/19908/80-anime-vanguards.html"><span class="TileImg default">
+                                                <p></p><span style="box-sizing:border-box;display:block;overflow:hidden;width:initial;height:initial;background:none;opacity:1;border:0;margin:0;padding:0;position:absolute;top:0;left:0;bottom:0;right:0"><img alt="Play 80 Anime Vanguards online on now.gg" fetchpriority="low" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" decoding="async" data-nimg="fill" style="position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%;object-fit:cover" /><noscript><img alt="Play 80 Anime Vanguards online on now.gg" fetchpriority="low" loading="lazy" decoding="async" data-nimg="fill" style="position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%;object-fit:cover" sizes="
                     (max-width: 719px) 64px,
                     (max-width: 1599px) and (min-width: 720px) 128px,
                     256px
@@ -2550,8 +2550,8 @@
                                                 </button>
                                             </div>
                                         </a></li>
-                                    <li class="Tile_wrap default"><a class="Tile default " href="https://educationbluesky.com/apps/cloud-whale-interactive-technology-llc/10386/polybuzz.html"><span class="TileImg default">
-                                                <p></p><span style="box-sizing:border-box;display:block;overflow:hidden;width:initial;height:initial;background:none;opacity:1;border:0;margin:0;padding:0;position:absolute;top:0;left:0;bottom:0;right:0"><img alt="Play PolyBuzz online on now.gg" fetchPriority="low" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" decoding="async" data-nimg="fill" style="position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%;object-fit:cover" /><noscript><img alt="Play PolyBuzz online on now.gg" fetchPriority="low" loading="lazy" decoding="async" data-nimg="fill" style="position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%;object-fit:cover" sizes="
+                                    <li class="Tile_wrap default"><a class="Tile default " href="https://now.gg/apps/cloud-whale-interactive-technology-llc/10386/polybuzz.html"><span class="TileImg default">
+                                                <p></p><span style="box-sizing:border-box;display:block;overflow:hidden;width:initial;height:initial;background:none;opacity:1;border:0;margin:0;padding:0;position:absolute;top:0;left:0;bottom:0;right:0"><img alt="Play PolyBuzz online on now.gg" fetchpriority="low" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" decoding="async" data-nimg="fill" style="position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%;object-fit:cover" /><noscript><img alt="Play PolyBuzz online on now.gg" fetchpriority="low" loading="lazy" decoding="async" data-nimg="fill" style="position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%;object-fit:cover" sizes="
                     (max-width: 719px) 64px,
                     (max-width: 1599px) and (min-width: 720px) 128px,
                     256px
@@ -2563,8 +2563,8 @@
                                                 </button>
                                             </div>
                                         </a></li>
-                                    <li class="Tile_wrap default"><a class="Tile default " href="https://educationbluesky.com/apps/99-Nights/19902/99-Nights.html"><span class="TileImg default">
-                                                <p></p><span style="box-sizing:border-box;display:block;overflow:hidden;width:initial;height:initial;background:none;opacity:1;border:0;margin:0;padding:0;position:absolute;top:0;left:0;bottom:0;right:0"><img alt="Play 99 Nights in the Forest online on now.gg" fetchPriority="low" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" decoding="async" data-nimg="fill" style="position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%;object-fit:cover" /><noscript><img alt="Play 99 Nights in the Forest online on now.gg" fetchPriority="low" loading="lazy" decoding="async" data-nimg="fill" style="position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%;object-fit:cover" sizes="
+                                    <li class="Tile_wrap default"><a class="Tile default " href="https://now.gg/apps/99-Nights/19902/99-Nights.html"><span class="TileImg default">
+                                                <p></p><span style="box-sizing:border-box;display:block;overflow:hidden;width:initial;height:initial;background:none;opacity:1;border:0;margin:0;padding:0;position:absolute;top:0;left:0;bottom:0;right:0"><img alt="Play 99 Nights in the Forest online on now.gg" fetchpriority="low" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" decoding="async" data-nimg="fill" style="position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%;object-fit:cover" /><noscript><img alt="Play 99 Nights in the Forest online on now.gg" fetchpriority="low" loading="lazy" decoding="async" data-nimg="fill" style="position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%;object-fit:cover" sizes="
                     (max-width: 719px) 64px,
                     (max-width: 1599px) and (min-width: 720px) 128px,
                     256px
@@ -2576,8 +2576,8 @@
                                                 </button>
                                             </div>
                                         </a></li>
-                                    <li class="Tile_wrap default"><a class="Tile default " href="https://educationbluesky.com/apps/Grow-a-Garden/19903/Grow-a-Garden.html"><span class="TileImg default">
-                                                <p></p><span style="box-sizing:border-box;display:block;overflow:hidden;width:initial;height:initial;background:none;opacity:1;border:0;margin:0;padding:0;position:absolute;top:0;left:0;bottom:0;right:0"><img alt="Play Grow a Garden online on now.gg" fetchPriority="low" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" decoding="async" data-nimg="fill" style="position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%;object-fit:cover" /><noscript><img alt="Play Grow a Garden online on now.gg" fetchPriority="low" loading="lazy" decoding="async" data-nimg="fill" style="position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%;object-fit:cover" sizes="
+                                    <li class="Tile_wrap default"><a class="Tile default " href="https://now.gg/apps/Grow-a-Garden/19903/Grow-a-Garden.html"><span class="TileImg default">
+                                                <p></p><span style="box-sizing:border-box;display:block;overflow:hidden;width:initial;height:initial;background:none;opacity:1;border:0;margin:0;padding:0;position:absolute;top:0;left:0;bottom:0;right:0"><img alt="Play Grow a Garden online on now.gg" fetchpriority="low" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" decoding="async" data-nimg="fill" style="position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%;object-fit:cover" /><noscript><img alt="Play Grow a Garden online on now.gg" fetchpriority="low" loading="lazy" decoding="async" data-nimg="fill" style="position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%;object-fit:cover" sizes="
                     (max-width: 719px) 64px,
                     (max-width: 1599px) and (min-width: 720px) 128px,
                     256px
@@ -2589,8 +2589,8 @@
                                                 </button>
                                             </div>
                                         </a></li>
-                                    <li class="Tile_wrap default"><a class="Tile default " href="https://educationbluesky.com/apps/ink-game/19906/ink-game.html"><span class="TileImg default">
-                                                <p></p><span style="box-sizing:border-box;display:block;overflow:hidden;width:initial;height:initial;background:none;opacity:1;border:0;margin:0;padding:0;position:absolute;top:0;left:0;bottom:0;right:0"><img alt="Play Ink Game online on now.gg" fetchPriority="low" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" decoding="async" data-nimg="fill" style="position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%;object-fit:cover" /><noscript><img alt="Play Ink Game online on now.gg" fetchPriority="low" loading="lazy" decoding="async" data-nimg="fill" style="position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%;object-fit:cover" sizes="
+                                    <li class="Tile_wrap default"><a class="Tile default " href="https://now.gg/apps/ink-game/19906/ink-game.html"><span class="TileImg default">
+                                                <p></p><span style="box-sizing:border-box;display:block;overflow:hidden;width:initial;height:initial;background:none;opacity:1;border:0;margin:0;padding:0;position:absolute;top:0;left:0;bottom:0;right:0"><img alt="Play Ink Game online on now.gg" fetchpriority="low" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" decoding="async" data-nimg="fill" style="position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%;object-fit:cover" /><noscript><img alt="Play Ink Game online on now.gg" fetchpriority="low" loading="lazy" decoding="async" data-nimg="fill" style="position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%;object-fit:cover" sizes="
                     (max-width: 719px) 64px,
                     (max-width: 1599px) and (min-width: 720px) 128px,
                     256px
@@ -2602,8 +2602,8 @@
                                                 </button>
                                             </div>
                                         </a></li>
-                                    <li class="Tile_wrap default"><a class="Tile default " href="https://educationbluesky.com/apps/nolodin/10613/cat-from-hell-cat-simulator.html"><span class="TileImg default">
-                                                <p></p><span style="box-sizing:border-box;display:block;overflow:hidden;width:initial;height:initial;background:none;opacity:1;border:0;margin:0;padding:0;position:absolute;top:0;left:0;bottom:0;right:0"><img alt="Play Cat From Hell - Cat Simulator online on now.gg" fetchPriority="low" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" decoding="async" data-nimg="fill" style="position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%;object-fit:cover" /><noscript><img alt="Play Cat From Hell - Cat Simulator online on now.gg" fetchPriority="low" loading="lazy" decoding="async" data-nimg="fill" style="position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%;object-fit:cover" sizes="
+                                    <li class="Tile_wrap default"><a class="Tile default " href="https://now.gg/apps/nolodin/10613/cat-from-hell-cat-simulator.html"><span class="TileImg default">
+                                                <p></p><span style="box-sizing:border-box;display:block;overflow:hidden;width:initial;height:initial;background:none;opacity:1;border:0;margin:0;padding:0;position:absolute;top:0;left:0;bottom:0;right:0"><img alt="Play Cat From Hell - Cat Simulator online on now.gg" fetchpriority="low" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" decoding="async" data-nimg="fill" style="position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%;object-fit:cover" /><noscript><img alt="Play Cat From Hell - Cat Simulator online on now.gg" fetchpriority="low" loading="lazy" decoding="async" data-nimg="fill" style="position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%;object-fit:cover" sizes="
                     (max-width: 719px) 64px,
                     (max-width: 1599px) and (min-width: 720px) 128px,
                     256px
@@ -2615,8 +2615,8 @@
                                                 </button>
                                             </div>
                                         </a></li>
-                                    <li class="Tile_wrap default"><a class="Tile default " href="https://educationbluesky.com/apps/Steal-a-Brainrot/19904/Steal-a-Brainrot.html"><span class="TileImg default">
-                                                <p></p><span style="box-sizing:border-box;display:block;overflow:hidden;width:initial;height:initial;background:none;opacity:1;border:0;margin:0;padding:0;position:absolute;top:0;left:0;bottom:0;right:0"><img alt="Play Steal a Brainrot online on now.gg" fetchPriority="low" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" decoding="async" data-nimg="fill" style="position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%;object-fit:cover" /><noscript><img alt="Play Steal a Brainrot online on now.gg" fetchPriority="low" loading="lazy" decoding="async" data-nimg="fill" style="position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%;object-fit:cover" sizes="
+                                    <li class="Tile_wrap default"><a class="Tile default " href="https://now.gg/apps/Steal-a-Brainrot/19904/Steal-a-Brainrot.html"><span class="TileImg default">
+                                                <p></p><span style="box-sizing:border-box;display:block;overflow:hidden;width:initial;height:initial;background:none;opacity:1;border:0;margin:0;padding:0;position:absolute;top:0;left:0;bottom:0;right:0"><img alt="Play Steal a Brainrot online on now.gg" fetchpriority="low" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" decoding="async" data-nimg="fill" style="position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%;object-fit:cover" /><noscript><img alt="Play Steal a Brainrot online on now.gg" fetchpriority="low" loading="lazy" decoding="async" data-nimg="fill" style="position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%;object-fit:cover" sizes="
                     (max-width: 719px) 64px,
                     (max-width: 1599px) and (min-width: 720px) 128px,
                     256px
@@ -2628,8 +2628,8 @@
                                                 </button>
                                             </div>
                                         </a></li>
-                                    <li class="Tile_wrap default"><a class="Tile default " href="https://educationbluesky.com/apps/adopt-me/19912/adopt-me.html"><span class="TileImg default">
-                                                <p></p><span style="box-sizing:border-box;display:block;overflow:hidden;width:initial;height:initial;background:none;opacity:1;border:0;margin:0;padding:0;position:absolute;top:0;left:0;bottom:0;right:0"><img alt="Play Adopt Me online on now.gg" fetchPriority="low" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" decoding="async" data-nimg="fill" style="position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%;object-fit:cover" /><noscript><img alt="Play Adopt Me online on now.gg" fetchPriority="low" loading="lazy" decoding="async" data-nimg="fill" style="position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%;object-fit:cover" sizes="
+                                    <li class="Tile_wrap default"><a class="Tile default " href="https://now.gg/apps/adopt-me/19912/adopt-me.html"><span class="TileImg default">
+                                                <p></p><span style="box-sizing:border-box;display:block;overflow:hidden;width:initial;height:initial;background:none;opacity:1;border:0;margin:0;padding:0;position:absolute;top:0;left:0;bottom:0;right:0"><img alt="Play Adopt Me online on now.gg" fetchpriority="low" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" decoding="async" data-nimg="fill" style="position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%;object-fit:cover" /><noscript><img alt="Play Adopt Me online on now.gg" fetchpriority="low" loading="lazy" decoding="async" data-nimg="fill" style="position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%;object-fit:cover" sizes="
                     (max-width: 719px) 64px,
                     (max-width: 1599px) and (min-width: 720px) 128px,
                     256px
@@ -2641,8 +2641,8 @@
                                                 </button>
                                             </div>
                                         </a></li>
-                                    <li class="Tile_wrap default"><a class="Tile default " href="https://educationbluesky.com/apps/lunime/5691/gacha-life-2.html"><span class="TileImg default">
-                                                <p></p><span style="box-sizing:border-box;display:block;overflow:hidden;width:initial;height:initial;background:none;opacity:1;border:0;margin:0;padding:0;position:absolute;top:0;left:0;bottom:0;right:0"><img alt="Play Gacha Life 2 online on now.gg" fetchPriority="low" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" decoding="async" data-nimg="fill" style="position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%;object-fit:cover" /><noscript><img alt="Play Gacha Life 2 online on now.gg" fetchPriority="low" loading="lazy" decoding="async" data-nimg="fill" style="position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%;object-fit:cover" sizes="
+                                    <li class="Tile_wrap default"><a class="Tile default " href="https://now.gg/apps/lunime/5691/gacha-life-2.html"><span class="TileImg default">
+                                                <p></p><span style="box-sizing:border-box;display:block;overflow:hidden;width:initial;height:initial;background:none;opacity:1;border:0;margin:0;padding:0;position:absolute;top:0;left:0;bottom:0;right:0"><img alt="Play Gacha Life 2 online on now.gg" fetchpriority="low" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" decoding="async" data-nimg="fill" style="position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%;object-fit:cover" /><noscript><img alt="Play Gacha Life 2 online on now.gg" fetchpriority="low" loading="lazy" decoding="async" data-nimg="fill" style="position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%;object-fit:cover" sizes="
                     (max-width: 719px) 64px,
                     (max-width: 1599px) and (min-width: 720px) 128px,
                     256px
@@ -2654,8 +2654,8 @@
                                                 </button>
                                             </div>
                                         </a></li>
-                                    <li class="Tile_wrap default"><a class="Tile default " href="https://educationbluesky.com/apps/Brookhaven/19905/Brookhaven.html"><span class="TileImg default">
-                                                <p></p><span style="box-sizing:border-box;display:block;overflow:hidden;width:initial;height:initial;background:none;opacity:1;border:0;margin:0;padding:0;position:absolute;top:0;left:0;bottom:0;right:0"><img alt="Play Brookhaven online on now.gg" fetchPriority="low" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" decoding="async" data-nimg="fill" style="position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%;object-fit:cover" /><noscript><img alt="Play Brookhaven online on now.gg" fetchPriority="low" loading="lazy" decoding="async" data-nimg="fill" style="position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%;object-fit:cover" sizes="
+                                    <li class="Tile_wrap default"><a class="Tile default " href="https://now.gg/apps/Brookhaven/19905/Brookhaven.html"><span class="TileImg default">
+                                                <p></p><span style="box-sizing:border-box;display:block;overflow:hidden;width:initial;height:initial;background:none;opacity:1;border:0;margin:0;padding:0;position:absolute;top:0;left:0;bottom:0;right:0"><img alt="Play Brookhaven online on now.gg" fetchpriority="low" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" decoding="async" data-nimg="fill" style="position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%;object-fit:cover" /><noscript><img alt="Play Brookhaven online on now.gg" fetchpriority="low" loading="lazy" decoding="async" data-nimg="fill" style="position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%;object-fit:cover" sizes="
                     (max-width: 719px) 64px,
                     (max-width: 1599px) and (min-width: 720px) 128px,
                     256px
@@ -2667,8 +2667,8 @@
                                                 </button>
                                             </div>
                                         </a></li>
-                                    <li class="Tile_wrap default"><a class="Tile default " href="https://educationbluesky.com/apps/skywork-ai-pte-ltd/8851/linky-chat-with-characters-ai.html"><span class="TileImg default">
-                                                <p></p><span style="box-sizing:border-box;display:block;overflow:hidden;width:initial;height:initial;background:none;opacity:1;border:0;margin:0;padding:0;position:absolute;top:0;left:0;bottom:0;right:0"><img alt="Play Linky: Chat with Characters AI online on now.gg" fetchPriority="low" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" decoding="async" data-nimg="fill" style="position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%;object-fit:cover" /><noscript><img alt="Play Linky: Chat with Characters AI online on now.gg" fetchPriority="low" loading="lazy" decoding="async" data-nimg="fill" style="position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%;object-fit:cover" sizes="
+                                    <li class="Tile_wrap default"><a class="Tile default " href="https://now.gg/apps/skywork-ai-pte-ltd/8851/linky-chat-with-characters-ai.html"><span class="TileImg default">
+                                                <p></p><span style="box-sizing:border-box;display:block;overflow:hidden;width:initial;height:initial;background:none;opacity:1;border:0;margin:0;padding:0;position:absolute;top:0;left:0;bottom:0;right:0"><img alt="Play Linky: Chat with Characters AI online on now.gg" fetchpriority="low" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" decoding="async" data-nimg="fill" style="position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%;object-fit:cover" /><noscript><img alt="Play Linky: Chat with Characters AI online on now.gg" fetchpriority="low" loading="lazy" decoding="async" data-nimg="fill" style="position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%;object-fit:cover" sizes="
                     (max-width: 719px) 64px,
                     (max-width: 1599px) and (min-width: 720px) 128px,
                     256px
@@ -2680,8 +2680,8 @@
                                                 </button>
                                             </div>
                                         </a></li>
-                                    <li class="Tile_wrap default"><a class="Tile default " href="https://educationbluesky.com/apps/bloxd/51240/bloxd-io.html"><span class="TileImg default">
-                                                <p></p><span style="box-sizing:border-box;display:block;overflow:hidden;width:initial;height:initial;background:none;opacity:1;border:0;margin:0;padding:0;position:absolute;top:0;left:0;bottom:0;right:0"><img alt="Play bloxd.io online on now.gg" fetchPriority="low" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" decoding="async" data-nimg="fill" style="position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%;object-fit:cover" /><noscript><img alt="Play bloxd.io online on now.gg" fetchPriority="low" loading="lazy" decoding="async" data-nimg="fill" style="position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%;object-fit:cover" sizes="
+                                    <li class="Tile_wrap default"><a class="Tile default " href="https://now.gg/apps/bloxd/51240/bloxd-io.html"><span class="TileImg default">
+                                                <p></p><span style="box-sizing:border-box;display:block;overflow:hidden;width:initial;height:initial;background:none;opacity:1;border:0;margin:0;padding:0;position:absolute;top:0;left:0;bottom:0;right:0"><img alt="Play bloxd.io online on now.gg" fetchpriority="low" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" decoding="async" data-nimg="fill" style="position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%;object-fit:cover" /><noscript><img alt="Play bloxd.io online on now.gg" fetchpriority="low" loading="lazy" decoding="async" data-nimg="fill" style="position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%;object-fit:cover" sizes="
                     (max-width: 719px) 64px,
                     (max-width: 1599px) and (min-width: 720px) 128px,
                     256px
@@ -2693,8 +2693,8 @@
                                                 </button>
                                             </div>
                                         </a></li>
-                                    <li class="Tile_wrap default"><a class="Tile default " href="https://educationbluesky.com/apps/lunime/2132/gacha-club.html"><span class="TileImg default">
-                                                <p></p><span style="box-sizing:border-box;display:block;overflow:hidden;width:initial;height:initial;background:none;opacity:1;border:0;margin:0;padding:0;position:absolute;top:0;left:0;bottom:0;right:0"><img alt="Play Gacha Club online on now.gg" fetchPriority="low" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" decoding="async" data-nimg="fill" style="position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%;object-fit:cover" /><noscript><img alt="Play Gacha Club online on now.gg" fetchPriority="low" loading="lazy" decoding="async" data-nimg="fill" style="position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%;object-fit:cover" sizes="
+                                    <li class="Tile_wrap default"><a class="Tile default " href="https://now.gg/apps/lunime/2132/gacha-club.html"><span class="TileImg default">
+                                                <p></p><span style="box-sizing:border-box;display:block;overflow:hidden;width:initial;height:initial;background:none;opacity:1;border:0;margin:0;padding:0;position:absolute;top:0;left:0;bottom:0;right:0"><img alt="Play Gacha Club online on now.gg" fetchpriority="low" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" decoding="async" data-nimg="fill" style="position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%;object-fit:cover" /><noscript><img alt="Play Gacha Club online on now.gg" fetchpriority="low" loading="lazy" decoding="async" data-nimg="fill" style="position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%;object-fit:cover" sizes="
                     (max-width: 719px) 64px,
                     (max-width: 1599px) and (min-width: 720px) 128px,
                     256px
@@ -2706,8 +2706,8 @@
                                                 </button>
                                             </div>
                                         </a></li>
-                                    <li class="Tile_wrap default"><a class="Tile default " href="https://educationbluesky.com/apps/Blox-fruit/19901/Blox-fruit.html"><span class="TileImg default">
-                                                <p></p><span style="box-sizing:border-box;display:block;overflow:hidden;width:initial;height:initial;background:none;opacity:1;border:0;margin:0;padding:0;position:absolute;top:0;left:0;bottom:0;right:0"><img alt="Play Blox-fruit online on now.gg" fetchPriority="low" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" decoding="async" data-nimg="fill" style="position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%;object-fit:cover" /><noscript><img alt="Play Blox-fruit online on now.gg" fetchPriority="low" loading="lazy" decoding="async" data-nimg="fill" style="position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%;object-fit:cover" sizes="
+                                    <li class="Tile_wrap default"><a class="Tile default " href="https://now.gg/apps/Blox-fruit/19901/Blox-fruit.html"><span class="TileImg default">
+                                                <p></p><span style="box-sizing:border-box;display:block;overflow:hidden;width:initial;height:initial;background:none;opacity:1;border:0;margin:0;padding:0;position:absolute;top:0;left:0;bottom:0;right:0"><img alt="Play Blox-fruit online on now.gg" fetchpriority="low" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" decoding="async" data-nimg="fill" style="position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%;object-fit:cover" /><noscript><img alt="Play Blox-fruit online on now.gg" fetchpriority="low" loading="lazy" decoding="async" data-nimg="fill" style="position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%;object-fit:cover" sizes="
                     (max-width: 719px) 64px,
                     (max-width: 1599px) and (min-width: 720px) 128px,
                     256px
@@ -2719,8 +2719,8 @@
                                                 </button>
                                             </div>
                                         </a></li>
-                                    <li class="Tile_wrap default"><a class="Tile default " href="https://educationbluesky.com/apps/lunime/5767/gacha-life.html"><span class="TileImg default">
-                                                <p></p><span style="box-sizing:border-box;display:block;overflow:hidden;width:initial;height:initial;background:none;opacity:1;border:0;margin:0;padding:0;position:absolute;top:0;left:0;bottom:0;right:0"><img alt="Play Gacha Life online on now.gg" fetchPriority="low" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" decoding="async" data-nimg="fill" style="position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%;object-fit:cover" /><noscript><img alt="Play Gacha Life online on now.gg" fetchPriority="low" loading="lazy" decoding="async" data-nimg="fill" style="position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%;object-fit:cover" sizes="
+                                    <li class="Tile_wrap default"><a class="Tile default " href="https://now.gg/apps/lunime/5767/gacha-life.html"><span class="TileImg default">
+                                                <p></p><span style="box-sizing:border-box;display:block;overflow:hidden;width:initial;height:initial;background:none;opacity:1;border:0;margin:0;padding:0;position:absolute;top:0;left:0;bottom:0;right:0"><img alt="Play Gacha Life online on now.gg" fetchpriority="low" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" decoding="async" data-nimg="fill" style="position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%;object-fit:cover" /><noscript><img alt="Play Gacha Life online on now.gg" fetchpriority="low" loading="lazy" decoding="async" data-nimg="fill" style="position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%;object-fit:cover" sizes="
                     (max-width: 719px) 64px,
                     (max-width: 1599px) and (min-width: 720px) 128px,
                     256px
@@ -2732,8 +2732,8 @@
                                                 </button>
                                             </div>
                                         </a></li>
-                                    <li class="Tile_wrap default"><a class="Tile default " href="https://educationbluesky.com/apps/upd-volleyball-legen/19915/upd-volleyball-legen.html"><span class="TileImg default">
-                                                <p></p><span style="box-sizing:border-box;display:block;overflow:hidden;width:initial;height:initial;background:none;opacity:1;border:0;margin:0;padding:0;position:absolute;top:0;left:0;bottom:0;right:0"><img alt="Play UPD Volleyball Legend online on now.gg" fetchPriority="low" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" decoding="async" data-nimg="fill" style="position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%;object-fit:cover" /><noscript><img alt="Play UPD Volleyball Legend online on now.gg" fetchPriority="low" loading="lazy" decoding="async" data-nimg="fill" style="position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%;object-fit:cover" sizes="
+                                    <li class="Tile_wrap default"><a class="Tile default " href="https://now.gg/apps/upd-volleyball-legen/19915/upd-volleyball-legen.html"><span class="TileImg default">
+                                                <p></p><span style="box-sizing:border-box;display:block;overflow:hidden;width:initial;height:initial;background:none;opacity:1;border:0;margin:0;padding:0;position:absolute;top:0;left:0;bottom:0;right:0"><img alt="Play UPD Volleyball Legend online on now.gg" fetchpriority="low" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" decoding="async" data-nimg="fill" style="position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%;object-fit:cover" /><noscript><img alt="Play UPD Volleyball Legend online on now.gg" fetchpriority="low" loading="lazy" decoding="async" data-nimg="fill" style="position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%;object-fit:cover" sizes="
                     (max-width: 719px) 64px,
                     (max-width: 1599px) and (min-width: 720px) 128px,
                     256px
@@ -2745,8 +2745,8 @@
                                                 </button>
                                             </div>
                                         </a></li>
-                                    <li class="Tile_wrap default"><a class="Tile default " href="https://educationbluesky.com/play/juefeng-games/9152/ace-defender.html"><span class="TileImg default">
-                                                <p></p><span style="box-sizing:border-box;display:block;overflow:hidden;width:initial;height:initial;background:none;opacity:1;border:0;margin:0;padding:0;position:absolute;top:0;left:0;bottom:0;right:0"><img alt="Play Ace Defender online on now.gg" fetchPriority="low" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" decoding="async" data-nimg="fill" style="position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%;object-fit:cover" /><noscript><img alt="Play Ace Defender online on now.gg" fetchPriority="low" loading="lazy" decoding="async" data-nimg="fill" style="position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%;object-fit:cover" sizes="
+                                    <li class="Tile_wrap default"><a class="Tile default " href="https://now.gg/play/juefeng-games/9152/ace-defender.html"><span class="TileImg default">
+                                                <p></p><span style="box-sizing:border-box;display:block;overflow:hidden;width:initial;height:initial;background:none;opacity:1;border:0;margin:0;padding:0;position:absolute;top:0;left:0;bottom:0;right:0"><img alt="Play Ace Defender online on now.gg" fetchpriority="low" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" decoding="async" data-nimg="fill" style="position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%;object-fit:cover" /><noscript><img alt="Play Ace Defender online on now.gg" fetchpriority="low" loading="lazy" decoding="async" data-nimg="fill" style="position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%;object-fit:cover" sizes="
                     (max-width: 719px) 64px,
                     (max-width: 1599px) and (min-width: 720px) 128px,
                     256px
@@ -2764,42 +2764,42 @@
                     </section>
                     <section class="OtherGames">
                         <div class="OtherGamesList" style="--size:calc((100% - 120px) / 6)">
-                            <div class="SingleGameCardWrap six-items"><a class="SingleGameCardLink" href="https://educationbluesky.com/apps/chennaigames-studio-private-limited/51921/mr-racer-car-racing.html">
+                            <div class="SingleGameCardWrap six-items"><a class="SingleGameCardLink" href="https://now.gg/apps/chennaigames-studio-private-limited/51921/mr-racer-car-racing.html">
                                     <div class="GameImgWrap"><span style="box-sizing:border-box;display:block;overflow:hidden;width:initial;height:initial;background:none;opacity:1;border:0;margin:0;padding:0;position:absolute;top:0;left:0;bottom:0;right:0"><img alt="Play MR RACER - Car Racing online on now.gg" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" decoding="async" data-nimg="fill" style="position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%;object-fit:cover" /><noscript><img alt="Play MR RACER - Car Racing online on now.gg" loading="lazy" decoding="async" data-nimg="fill" style="position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%;object-fit:cover" sizes="(max-width: 1000px) 256px, 256px" srcSet="https://cdn.now.gg/assets-opt/_next/image?url=https%3A%2F%2Fcdn.now.gg%2Fapps-content%2F51921%2Fgame-tiles%2Fmr-racer-car-racing.jpg&amp;w=64&amp;q=80 64w, https://cdn.now.gg/assets-opt/_next/image?url=https%3A%2F%2Fcdn.now.gg%2Fapps-content%2F51921%2Fgame-tiles%2Fmr-racer-car-racing.jpg&amp;w=128&amp;q=80 128w, https://cdn.now.gg/assets-opt/_next/image?url=https%3A%2F%2Fcdn.now.gg%2Fapps-content%2F51921%2Fgame-tiles%2Fmr-racer-car-racing.jpg&amp;w=256&amp;q=80 256w, https://cdn.now.gg/assets-opt/_next/image?url=https%3A%2F%2Fcdn.now.gg%2Fapps-content%2F51921%2Fgame-tiles%2Fmr-racer-car-racing.jpg&amp;w=512&amp;q=80 512w, https://cdn.now.gg/assets-opt/_next/image?url=https%3A%2F%2Fcdn.now.gg%2Fapps-content%2F51921%2Fgame-tiles%2Fmr-racer-car-racing.jpg&amp;w=640&amp;q=80 640w, https://cdn.now.gg/assets-opt/_next/image?url=https%3A%2F%2Fcdn.now.gg%2Fapps-content%2F51921%2Fgame-tiles%2Fmr-racer-car-racing.jpg&amp;w=920&amp;q=80 920w, https://cdn.now.gg/assets-opt/_next/image?url=https%3A%2F%2Fcdn.now.gg%2Fapps-content%2F51921%2Fgame-tiles%2Fmr-racer-car-racing.jpg&amp;w=1440&amp;q=80 1440w" src="https://cdn.now.gg/assets-opt/_next/image?url=https%3A%2F%2Fcdn.now.gg%2Fapps-content%2F51921%2Fgame-tiles%2Fmr-racer-car-racing.jpg&amp;w=1440&amp;q=80" /></noscript></span></div>
                                     <div style="margin-top:8px">
                                         <p class="BodySRegular">MR RACER - Car Racing</p>
                                         <p class="BodyMRegular">ChennaiGames Studio Private Limited</p>
                                     </div>
                                 </a></div>
-                            <div class="SingleGameCardWrap six-items"><a class="SingleGameCardLink" href="https://educationbluesky.com/apps/kosmos-games/51904/solitaire-social.html">
+                            <div class="SingleGameCardWrap six-items"><a class="SingleGameCardLink" href="https://now.gg/apps/kosmos-games/51904/solitaire-social.html">
                                     <div class="GameImgWrap"><span style="box-sizing:border-box;display:block;overflow:hidden;width:initial;height:initial;background:none;opacity:1;border:0;margin:0;padding:0;position:absolute;top:0;left:0;bottom:0;right:0"><img alt="Play Solitaire Social online on now.gg" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" decoding="async" data-nimg="fill" style="position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%;object-fit:cover" /><noscript><img alt="Play Solitaire Social online on now.gg" loading="lazy" decoding="async" data-nimg="fill" style="position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%;object-fit:cover" sizes="(max-width: 1000px) 256px, 256px" srcSet="https://cdn.now.gg/assets-opt/_next/image?url=https%3A%2F%2Fcdn.now.gg%2Fapps-content%2F51904%2Fgame-tiles%2Fsolitaire-social.jpg&amp;w=64&amp;q=80 64w, https://cdn.now.gg/assets-opt/_next/image?url=https%3A%2F%2Fcdn.now.gg%2Fapps-content%2F51904%2Fgame-tiles%2Fsolitaire-social.jpg&amp;w=128&amp;q=80 128w, https://cdn.now.gg/assets-opt/_next/image?url=https%3A%2F%2Fcdn.now.gg%2Fapps-content%2F51904%2Fgame-tiles%2Fsolitaire-social.jpg&amp;w=256&amp;q=80 256w, https://cdn.now.gg/assets-opt/_next/image?url=https%3A%2F%2Fcdn.now.gg%2Fapps-content%2F51904%2Fgame-tiles%2Fsolitaire-social.jpg&amp;w=512&amp;q=80 512w, https://cdn.now.gg/assets-opt/_next/image?url=https%3A%2F%2Fcdn.now.gg%2Fapps-content%2F51904%2Fgame-tiles%2Fsolitaire-social.jpg&amp;w=640&amp;q=80 640w, https://cdn.now.gg/assets-opt/_next/image?url=https%3A%2F%2Fcdn.now.gg%2Fapps-content%2F51904%2Fgame-tiles%2Fsolitaire-social.jpg&amp;w=920&amp;q=80 920w, https://cdn.now.gg/assets-opt/_next/image?url=https%3A%2F%2Fcdn.now.gg%2Fapps-content%2F51904%2Fgame-tiles%2Fsolitaire-social.jpg&amp;w=1440&amp;q=80 1440w" src="https://cdn.now.gg/assets-opt/_next/image?url=https%3A%2F%2Fcdn.now.gg%2Fapps-content%2F51904%2Fgame-tiles%2Fsolitaire-social.jpg&amp;w=1440&amp;q=80" /></noscript></span></div>
                                     <div style="margin-top:8px">
                                         <p class="BodySRegular">Solitaire Social</p>
                                         <p class="BodyMRegular">Kosmos Games</p>
                                     </div>
                                 </a></div>
-                            <div class="SingleGameCardWrap six-items"><a class="SingleGameCardLink" href="https://educationbluesky.com/apps/mobaso/8840/impostor-rescue.html">
+                            <div class="SingleGameCardWrap six-items"><a class="SingleGameCardLink" href="https://now.gg/apps/mobaso/8840/impostor-rescue.html">
                                     <div class="GameImgWrap"><span style="box-sizing:border-box;display:block;overflow:hidden;width:initial;height:initial;background:none;opacity:1;border:0;margin:0;padding:0;position:absolute;top:0;left:0;bottom:0;right:0"><img alt="Play Impostor Rescue online on now.gg" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" decoding="async" data-nimg="fill" style="position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%;object-fit:cover" /><noscript><img alt="Play Impostor Rescue online on now.gg" loading="lazy" decoding="async" data-nimg="fill" style="position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%;object-fit:cover" sizes="(max-width: 1000px) 256px, 256px" srcSet="https://cdn.now.gg/assets-opt/_next/image?url=https%3A%2F%2Fcdn.now.gg%2Fapps-content%2F8840%2Fgame-tiles%2Fimpostor-rescue.jpg&amp;w=64&amp;q=80 64w, https://cdn.now.gg/assets-opt/_next/image?url=https%3A%2F%2Fcdn.now.gg%2Fapps-content%2F8840%2Fgame-tiles%2Fimpostor-rescue.jpg&amp;w=128&amp;q=80 128w, https://cdn.now.gg/assets-opt/_next/image?url=https%3A%2F%2Fcdn.now.gg%2Fapps-content%2F8840%2Fgame-tiles%2Fimpostor-rescue.jpg&amp;w=256&amp;q=80 256w, https://cdn.now.gg/assets-opt/_next/image?url=https%3A%2F%2Fcdn.now.gg%2Fapps-content%2F8840%2Fgame-tiles%2Fimpostor-rescue.jpg&amp;w=512&amp;q=80 512w, https://cdn.now.gg/assets-opt/_next/image?url=https%3A%2F%2Fcdn.now.gg%2Fapps-content%2F8840%2Fgame-tiles%2Fimpostor-rescue.jpg&amp;w=640&amp;q=80 640w, https://cdn.now.gg/assets-opt/_next/image?url=https%3A%2F%2Fcdn.now.gg%2Fapps-content%2F8840%2Fgame-tiles%2Fimpostor-rescue.jpg&amp;w=920&amp;q=80 920w, https://cdn.now.gg/assets-opt/_next/image?url=https%3A%2F%2Fcdn.now.gg%2Fapps-content%2F8840%2Fgame-tiles%2Fimpostor-rescue.jpg&amp;w=1440&amp;q=80 1440w" src="https://cdn.now.gg/assets-opt/_next/image?url=https%3A%2F%2Fcdn.now.gg%2Fapps-content%2F8840%2Fgame-tiles%2Fimpostor-rescue.jpg&amp;w=1440&amp;q=80" /></noscript></span></div>
                                     <div style="margin-top:8px">
                                         <p class="BodySRegular">Impostor Rescue</p>
                                         <p class="BodyMRegular">Mobaso</p>
                                     </div>
                                 </a></div>
-                            <div class="SingleGameCardWrap six-items"><a class="SingleGameCardLink" href="https://educationbluesky.com/apps/rohit-gaming-studio/8822/indian-bikes-driving-3d.html">
+                            <div class="SingleGameCardWrap six-items"><a class="SingleGameCardLink" href="https://now.gg/apps/rohit-gaming-studio/8822/indian-bikes-driving-3d.html">
                                     <div class="GameImgWrap"><span style="box-sizing:border-box;display:block;overflow:hidden;width:initial;height:initial;background:none;opacity:1;border:0;margin:0;padding:0;position:absolute;top:0;left:0;bottom:0;right:0"><img alt="Play Indian Bikes Driving 3D online on now.gg" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" decoding="async" data-nimg="fill" style="position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%;object-fit:cover" /><noscript><img alt="Play Indian Bikes Driving 3D online on now.gg" loading="lazy" decoding="async" data-nimg="fill" style="position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%;object-fit:cover" sizes="(max-width: 1000px) 256px, 256px" srcSet="https://cdn.now.gg/assets-opt/_next/image?url=https%3A%2F%2Fcdn.now.gg%2Fapps-content%2F8822%2Fgame-tiles%2Findian-bikes-driving-3d.jpg&amp;w=64&amp;q=80 64w, https://cdn.now.gg/assets-opt/_next/image?url=https%3A%2F%2Fcdn.now.gg%2Fapps-content%2F8822%2Fgame-tiles%2Findian-bikes-driving-3d.jpg&amp;w=128&amp;q=80 128w, https://cdn.now.gg/assets-opt/_next/image?url=https%3A%2F%2Fcdn.now.gg%2Fapps-content%2F8822%2Fgame-tiles%2Findian-bikes-driving-3d.jpg&amp;w=256&amp;q=80 256w, https://cdn.now.gg/assets-opt/_next/image?url=https%3A%2F%2Fcdn.now.gg%2Fapps-content%2F8822%2Fgame-tiles%2Findian-bikes-driving-3d.jpg&amp;w=512&amp;q=80 512w, https://cdn.now.gg/assets-opt/_next/image?url=https%3A%2F%2Fcdn.now.gg%2Fapps-content%2F8822%2Fgame-tiles%2Findian-bikes-driving-3d.jpg&amp;w=640&amp;q=80 640w, https://cdn.now.gg/assets-opt/_next/image?url=https%3A%2F%2Fcdn.now.gg%2Fapps-content%2F8822%2Fgame-tiles%2Findian-bikes-driving-3d.jpg&amp;w=920&amp;q=80 920w, https://cdn.now.gg/assets-opt/_next/image?url=https%3A%2F%2Fcdn.now.gg%2Fapps-content%2F8822%2Fgame-tiles%2Findian-bikes-driving-3d.jpg&amp;w=1440&amp;q=80 1440w" src="https://cdn.now.gg/assets-opt/_next/image?url=https%3A%2F%2Fcdn.now.gg%2Fapps-content%2F8822%2Fgame-tiles%2Findian-bikes-driving-3d.jpg&amp;w=1440&amp;q=80" /></noscript></span></div>
                                     <div style="margin-top:8px">
                                         <p class="BodySRegular">Indian Bikes Driving 3D</p>
                                         <p class="BodyMRegular">Rohit Gaming Studio</p>
                                     </div>
                                 </a></div>
-                            <div class="SingleGameCardWrap six-items"><a class="SingleGameCardLink" href="https://educationbluesky.com/apps/lightfox-games-inc/8697/rumble-club.html">
+                            <div class="SingleGameCardWrap six-items"><a class="SingleGameCardLink" href="https://now.gg/apps/lightfox-games-inc/8697/rumble-club.html">
                                     <div class="GameImgWrap"><span style="box-sizing:border-box;display:block;overflow:hidden;width:initial;height:initial;background:none;opacity:1;border:0;margin:0;padding:0;position:absolute;top:0;left:0;bottom:0;right:0"><img alt="Play Rumble Club online on now.gg" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" decoding="async" data-nimg="fill" style="position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%;object-fit:cover" /><noscript><img alt="Play Rumble Club online on now.gg" loading="lazy" decoding="async" data-nimg="fill" style="position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%;object-fit:cover" sizes="(max-width: 1000px) 256px, 256px" srcSet="https://cdn.now.gg/assets-opt/_next/image?url=https%3A%2F%2Fcdn.now.gg%2Fapps-content%2F8697%2Fgame-tiles%2Frumble-club.jpg&amp;w=64&amp;q=80 64w, https://cdn.now.gg/assets-opt/_next/image?url=https%3A%2F%2Fcdn.now.gg%2Fapps-content%2F8697%2Fgame-tiles%2Frumble-club.jpg&amp;w=128&amp;q=80 128w, https://cdn.now.gg/assets-opt/_next/image?url=https%3A%2F%2Fcdn.now.gg%2Fapps-content%2F8697%2Fgame-tiles%2Frumble-club.jpg&amp;w=256&amp;q=80 256w, https://cdn.now.gg/assets-opt/_next/image?url=https%3A%2F%2Fcdn.now.gg%2Fapps-content%2F8697%2Fgame-tiles%2Frumble-club.jpg&amp;w=512&amp;q=80 512w, https://cdn.now.gg/assets-opt/_next/image?url=https%3A%2F%2Fcdn.now.gg%2Fapps-content%2F8697%2Fgame-tiles%2Frumble-club.jpg&amp;w=640&amp;q=80 640w, https://cdn.now.gg/assets-opt/_next/image?url=https%3A%2F%2Fcdn.now.gg%2Fapps-content%2F8697%2Fgame-tiles%2Frumble-club.jpg&amp;w=920&amp;q=80 920w, https://cdn.now.gg/assets-opt/_next/image?url=https%3A%2F%2Fcdn.now.gg%2Fapps-content%2F8697%2Fgame-tiles%2Frumble-club.jpg&amp;w=1440&amp;q=80 1440w" src="https://cdn.now.gg/assets-opt/_next/image?url=https%3A%2F%2Fcdn.now.gg%2Fapps-content%2F8697%2Fgame-tiles%2Frumble-club.jpg&amp;w=1440&amp;q=80" /></noscript></span></div>
                                     <div style="margin-top:8px">
                                         <p class="BodySRegular">Rumble Club</p>
                                         <p class="BodyMRegular">Lightfox Games, Inc.</p>
                                     </div>
                                 </a></div>
-                            <div class="SingleGameCardWrap six-items"><a class="SingleGameCardLink" href="https://educationbluesky.com/apps/spatial-io/51907/escape-lockdown.html">
+                            <div class="SingleGameCardWrap six-items"><a class="SingleGameCardLink" href="https://now.gg/apps/spatial-io/51907/escape-lockdown.html">
                                     <div class="GameImgWrap"><span style="box-sizing:border-box;display:block;overflow:hidden;width:initial;height:initial;background:none;opacity:1;border:0;margin:0;padding:0;position:absolute;top:0;left:0;bottom:0;right:0"><img alt="Play Escape Lockdown online on now.gg" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" decoding="async" data-nimg="fill" style="position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%;object-fit:cover" /><noscript><img alt="Play Escape Lockdown online on now.gg" loading="lazy" decoding="async" data-nimg="fill" style="position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%;object-fit:cover" sizes="(max-width: 1000px) 256px, 256px" srcSet="https://cdn.now.gg/assets-opt/_next/image?url=https%3A%2F%2Fcdn.now.gg%2Fapps-content%2F51907%2Fgame-tiles%2Fescape-lockdown.jpg&amp;w=64&amp;q=80 64w, https://cdn.now.gg/assets-opt/_next/image?url=https%3A%2F%2Fcdn.now.gg%2Fapps-content%2F51907%2Fgame-tiles%2Fescape-lockdown.jpg&amp;w=128&amp;q=80 128w, https://cdn.now.gg/assets-opt/_next/image?url=https%3A%2F%2Fcdn.now.gg%2Fapps-content%2F51907%2Fgame-tiles%2Fescape-lockdown.jpg&amp;w=256&amp;q=80 256w, https://cdn.now.gg/assets-opt/_next/image?url=https%3A%2F%2Fcdn.now.gg%2Fapps-content%2F51907%2Fgame-tiles%2Fescape-lockdown.jpg&amp;w=512&amp;q=80 512w, https://cdn.now.gg/assets-opt/_next/image?url=https%3A%2F%2Fcdn.now.gg%2Fapps-content%2F51907%2Fgame-tiles%2Fescape-lockdown.jpg&amp;w=640&amp;q=80 640w, https://cdn.now.gg/assets-opt/_next/image?url=https%3A%2F%2Fcdn.now.gg%2Fapps-content%2F51907%2Fgame-tiles%2Fescape-lockdown.jpg&amp;w=920&amp;q=80 920w, https://cdn.now.gg/assets-opt/_next/image?url=https%3A%2F%2Fcdn.now.gg%2Fapps-content%2F51907%2Fgame-tiles%2Fescape-lockdown.jpg&amp;w=1440&amp;q=80 1440w" src="https://cdn.now.gg/assets-opt/_next/image?url=https%3A%2F%2Fcdn.now.gg%2Fapps-content%2F51907%2Fgame-tiles%2Fescape-lockdown.jpg&amp;w=1440&amp;q=80" /></noscript></span></div>
                                     <div style="margin-top:8px">
                                         <p class="BodySRegular">Escape Lockdown</p>
@@ -2854,7 +2854,7 @@
                                                 <p class="sc-37a20de2-1 hVUUyG">Busted gaming on school laptop, but you are still lit🔥😎</p>
                                             </div>
                                         </div>
-                                    </div><button aria-label="Previous videos" role="button" class="sc-c0c73874-0 sc-c0c73874-12 gvlZHF cbOYpP"></button><button aria-label="Next videos" role="button" class="sc-c0c73874-0 sc-c0c73874-12 dGKqcH hXaiGn"></button>
+                                    </div><button aria-label="Previous videos" role="button" class="sc-f0278210-0 sc-f0278210-12 iatfom hEUfFg"></button><button aria-label="Next videos" role="button" class="sc-f0278210-0 sc-f0278210-12 eTVvTk la-DZpE"></button>
                                 </div>
                             </div>
                         </div>
@@ -2862,21 +2862,21 @@
                     <section class="Section">
                         <h2 class="SectionHeading" id="categories">Explore by Categories</h2>
                         <ul id="ng-unified-categories-list" class="CatList">
-                            <li><a class="JWOCEUbopYPlDB10" href="https://now.gg/games/browser.html"><img loading="lazy" fetchPriority="low" alt="Play Browser Games on now.gg" width="33" height="33" /><span>Browser Games</span></a></li>
-                            <li><a class="JWOCEUbopYPlDB10" href="https://now.gg/games/casual.html"><img loading="lazy" fetchPriority="low" alt="Play Casual Games on now.gg" width="33" height="33" /><span>Casual Games</span></a></li>
-                            <li><a class="JWOCEUbopYPlDB10" href="https://now.gg/games/strategy.html"><img loading="lazy" fetchPriority="low" alt="Play Strategy Games on now.gg" width="33" height="33" /><span>Strategy Games</span></a></li>
-                            <li><a class="JWOCEUbopYPlDB10" href="https://now.gg/games/simulation.html"><img loading="lazy" fetchPriority="low" alt="Play Simulation Games on now.gg" width="33" height="33" /><span>Simulation Games</span></a></li>
-                            <li><a class="JWOCEUbopYPlDB10" href="https://now.gg/games/role-playing.html"><img loading="lazy" fetchPriority="low" alt="Play Role Playing Games on now.gg" width="33" height="33" /><span>Role Playing Games</span></a></li>
-                            <li><a class="JWOCEUbopYPlDB10" href="https://now.gg/games/action.html"><img loading="lazy" fetchPriority="low" alt="Play Action Games on now.gg" width="33" height="33" /><span>Action Games</span></a></li>
-                            <li><a class="JWOCEUbopYPlDB10" href="https://now.gg/games/adventure.html"><img loading="lazy" fetchPriority="low" alt="Play Adventure Games on now.gg" width="33" height="33" /><span>Adventure Games</span></a></li>
-                            <li><a class="JWOCEUbopYPlDB10" href="https://now.gg/games/puzzle.html"><img loading="lazy" fetchPriority="low" alt="Play Puzzle Games on now.gg" width="33" height="33" /><span>Puzzle Games</span></a></li>
-                            <li><a class="JWOCEUbopYPlDB10" href="https://now.gg/games/arcade.html"><img loading="lazy" fetchPriority="low" alt="Play Arcade Games on now.gg" width="33" height="33" /><span>Arcade Games</span></a></li>
-                            <li><a class="JWOCEUbopYPlDB10" href="https://now.gg/games/sports.html"><img loading="lazy" fetchPriority="low" alt="Play Sports Games on now.gg" width="33" height="33" /><span>Sports Games</span></a></li>
-                            <li><a class="JWOCEUbopYPlDB10" href="https://now.gg/games/casino.html"><img loading="lazy" fetchPriority="low" alt="Play Casino Games on now.gg" width="33" height="33" /><span>Casino Games</span></a></li>
-                            <li><a class="JWOCEUbopYPlDB10" href="https://now.gg/games/racing.html"><img loading="lazy" fetchPriority="low" alt="Play Racing Games on now.gg" width="33" height="33" /><span>Racing Games</span></a></li>
-                            <li><a class="JWOCEUbopYPlDB10" href="https://now.gg/games/card.html"><img loading="lazy" fetchPriority="low" alt="Play Card Games on now.gg" width="33" height="33" /><span>Card Games</span></a></li>
-                            <li><a class="JWOCEUbopYPlDB10" href="https://now.gg/games/educational.html"><img loading="lazy" fetchPriority="low" alt="Play Educational Games on now.gg" width="33" height="33" /><span>Educational Games</span></a></li>
-                            <li><a class="JWOCEUbopYPlDB10" href="https://now.gg/games/social.html"><img loading="lazy" fetchPriority="low" alt="Play Social Games on now.gg" width="33" height="33" /><span>Social Games</span></a></li>
+                            <li><a class="JWOCEUbopYPlDB10" href="https://now.gg/games/browser.html"><img loading="lazy" fetchpriority="low" alt="Play Browser Games on now.gg" width="33" height="33" /><span>Browser Games</span></a></li>
+                            <li><a class="JWOCEUbopYPlDB10" href="https://now.gg/games/casual.html"><img loading="lazy" fetchpriority="low" alt="Play Casual Games on now.gg" width="33" height="33" /><span>Casual Games</span></a></li>
+                            <li><a class="JWOCEUbopYPlDB10" href="https://now.gg/games/strategy.html"><img loading="lazy" fetchpriority="low" alt="Play Strategy Games on now.gg" width="33" height="33" /><span>Strategy Games</span></a></li>
+                            <li><a class="JWOCEUbopYPlDB10" href="https://now.gg/games/simulation.html"><img loading="lazy" fetchpriority="low" alt="Play Simulation Games on now.gg" width="33" height="33" /><span>Simulation Games</span></a></li>
+                            <li><a class="JWOCEUbopYPlDB10" href="https://now.gg/games/role-playing.html"><img loading="lazy" fetchpriority="low" alt="Play Role Playing Games on now.gg" width="33" height="33" /><span>Role Playing Games</span></a></li>
+                            <li><a class="JWOCEUbopYPlDB10" href="https://now.gg/games/action.html"><img loading="lazy" fetchpriority="low" alt="Play Action Games on now.gg" width="33" height="33" /><span>Action Games</span></a></li>
+                            <li><a class="JWOCEUbopYPlDB10" href="https://now.gg/games/adventure.html"><img loading="lazy" fetchpriority="low" alt="Play Adventure Games on now.gg" width="33" height="33" /><span>Adventure Games</span></a></li>
+                            <li><a class="JWOCEUbopYPlDB10" href="https://now.gg/games/puzzle.html"><img loading="lazy" fetchpriority="low" alt="Play Puzzle Games on now.gg" width="33" height="33" /><span>Puzzle Games</span></a></li>
+                            <li><a class="JWOCEUbopYPlDB10" href="https://now.gg/games/arcade.html"><img loading="lazy" fetchpriority="low" alt="Play Arcade Games on now.gg" width="33" height="33" /><span>Arcade Games</span></a></li>
+                            <li><a class="JWOCEUbopYPlDB10" href="https://now.gg/games/sports.html"><img loading="lazy" fetchpriority="low" alt="Play Sports Games on now.gg" width="33" height="33" /><span>Sports Games</span></a></li>
+                            <li><a class="JWOCEUbopYPlDB10" href="https://now.gg/games/casino.html"><img loading="lazy" fetchpriority="low" alt="Play Casino Games on now.gg" width="33" height="33" /><span>Casino Games</span></a></li>
+                            <li><a class="JWOCEUbopYPlDB10" href="https://now.gg/games/racing.html"><img loading="lazy" fetchpriority="low" alt="Play Racing Games on now.gg" width="33" height="33" /><span>Racing Games</span></a></li>
+                            <li><a class="JWOCEUbopYPlDB10" href="https://now.gg/games/card.html"><img loading="lazy" fetchpriority="low" alt="Play Card Games on now.gg" width="33" height="33" /><span>Card Games</span></a></li>
+                            <li><a class="JWOCEUbopYPlDB10" href="https://now.gg/games/educational.html"><img loading="lazy" fetchpriority="low" alt="Play Educational Games on now.gg" width="33" height="33" /><span>Educational Games</span></a></li>
+                            <li><a class="JWOCEUbopYPlDB10" href="https://now.gg/games/social.html"><img loading="lazy" fetchpriority="low" alt="Play Social Games on now.gg" width="33" height="33" /><span>Social Games</span></a></li>
                         </ul>
                         <div class="SepContainer"><a class="MoreCta" id="showMoreCategories" href="https://now.gg/games.html">Show More</a></div>
                     </section>
@@ -2884,7 +2884,7 @@
                         <div class="container">
                             <ul class="T0w3sq3BDE1MciAN">
                                 <li class="Le6V0p1txbgPpAt6"></li>
-                                <li class="Le6V0p1txbgPpAt6"><a class="zCfvVOwD20HdF9XE" href="https://educationbluesky.com"><span>Home</span><svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <li class="Le6V0p1txbgPpAt6"><a class="zCfvVOwD20HdF9XE" href="https://now.gg"><span>Home</span><svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path fill-rule="evenodd" clip-rule="evenodd" d="M12.3536 6.11617C12.1583 5.92091 11.8417 5.92091 11.6464 6.11617L8 9.76262L4.35355 6.11617C4.15829 5.92091 3.84171 5.92091 3.64645 6.11617C3.45118 6.31143 3.45118 6.62802 3.64645 6.82328L7.64645 10.8233C7.84171 11.0185 8.15829 11.0185 8.35355 10.8233L12.3536 6.82328C12.5488 6.62802 12.5488 6.31144 12.3536 6.11617Z" fill="rgba(255, 255, 255, 0.5)"></path>
                                         </svg></a></li>
                                 <li class="Le6V0p1txbgPpAt6"><a class="zCfvVOwD20HdF9XE" href="https:/now.gg/games.html"><span>Games</span><svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -2893,7 +2893,7 @@
                                 <li class="Le6V0p1txbgPpAt6"><a class="zCfvVOwD20HdF9XE" href="https:/now.gg/games/undefined.html"><span>Casual Games</span><svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path fill-rule="evenodd" clip-rule="evenodd" d="M12.3536 6.11617C12.1583 5.92091 11.8417 5.92091 11.6464 6.11617L8 9.76262L4.35355 6.11617C4.15829 5.92091 3.84171 5.92091 3.64645 6.11617C3.45118 6.31143 3.45118 6.62802 3.64645 6.82328L7.64645 10.8233C7.84171 11.0185 8.15829 11.0185 8.35355 10.8233L12.3536 6.82328C12.5488 6.62802 12.5488 6.31144 12.3536 6.11617Z" fill="rgba(255, 255, 255, 0.5)"></path>
                                         </svg></a></li>
-                                <li class="Le6V0p1txbgPpAt6"><a class="zCfvVOwD20HdF9XE" href="https://educationbluesky.com/apps/undefined/undefined/undefined.html"><span></span><svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <li class="Le6V0p1txbgPpAt6"><a class="zCfvVOwD20HdF9XE" href="https://now.gg/apps/undefined/undefined/undefined.html"><span></span><svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path fill-rule="evenodd" clip-rule="evenodd" d="M12.3536 6.11617C12.1583 5.92091 11.8417 5.92091 11.6464 6.11617L8 9.76262L4.35355 6.11617C4.15829 5.92091 3.84171 5.92091 3.64645 6.11617C3.45118 6.31143 3.45118 6.62802 3.64645 6.82328L7.64645 10.8233C7.84171 11.0185 8.15829 11.0185 8.35355 10.8233L12.3536 6.82328C12.5488 6.62802 12.5488 6.31144 12.3536 6.11617Z" fill="rgba(255, 255, 255, 0.5)"></path>
                                         </svg></a></li>
                             </ul>
@@ -2935,12 +2935,12 @@
                             <div class="FooterBottom ">
                                 <div><a href="https://now.gg/terms-and-privacy.html?utm_source=dev.now.gg&amp;utm_medium=dev-site&amp;utm_campaign=dev-home#terms" target="_blank" rel="noreferrer">Terms and Privacy</a><a href="https://now.gg/copyright-dispute-policy.html?utm_source=dev.now.gg&amp;utm_medium=dev-site&amp;utm_campaign=dev-home" target="_blank" rel="noreferrer">Copyright Dispute Policy</a><a href="https://now.gg/terms-and-privacy.html?utm_source=dev.now.gg&amp;utm_medium=dev-site&amp;utm_campaign=dev-home#eu-privacy" target="_blank" rel="noreferrer">EU Privacy</a></div>
                                 <div>
-                                    <p>©<!-- --> <!-- -->2025<!-- --> <!-- -->now.gg. All rights reserved. By using now.gg you agree to our Terms of use and Privacy Policy</p>
+                                    <p>©<!-- --> <!-- -->2026<!-- --> <!-- -->now.gg. All rights reserved. By using now.gg you agree to our Terms of use and Privacy Policy</p>
                                 </div>
                             </div>
                         </div>
                         <div class="SF_90sfE2c4SGNZq">
-                            <buton class="sc-3c372983-26 sc-d9753f79-0 cjZScc epLODS"><img src="/7/_next/static/media/ccpa-privacy.02fa94ed.webp" alt="privacy" class="sc-d9753f79-1 FUMIF" />Your privacy settings</buton>
+                            <buton class="sc-3c372983-26 sc-d9753f79-0 cjZScc epLODS"><img src="/2/_next/static/media/ccpa-privacy.02fa94ed.webp" alt="privacy" class="sc-d9753f79-1 FUMIF" />Your privacy settings</buton>
                         </div>
                     </footer>
                 </div>
@@ -2971,11 +2971,11 @@
                         "media": {
                             "desktop": {
                                 "banner": "https://cdn.now.gg/apps-content/default/images/Banner_Landscape.jpg",
-                                "launchVideo": "https://cdn.now.gg/apps-content/default/launch-video/desktop/Launch_1920.mp4"
+                                "launchVideo": "/loading.mp4"
                             },
                             "mobile": {
                                 "banner": "https://cdn.now.gg/apps-content/default/images/Banner_Portrait.jpg",
-                                "launchVideo": "https://cdn.now.gg/apps-content/default/launch-video/mobile/Launch_1280.mp4"
+                                "launchVideo": "/loading.mp4"
                             },
                             "icon": "https://cdn.now.gg/apps-content/default/images/Icon_512.png",
                             "tile": "https://cdn.now.gg/apps-content/default/images/Game_Tile.jpg",
@@ -3001,11 +3001,11 @@
                         "paymentBaseRedirectHost": "https://now.gg",
                         "embeddedGameUrl": "",
                         "enableUnifiedPage": true,
-                        "playDomain": "educationbluesky.com",
+                        "playDomain": "now.gg",
                         "pwaNudgeDelayMs": 600000,
-                        "authClientId": "zBC1LCs7s7IuZzxQP9oO$$01FSC1WJAM5587593T5ZQDREQV",
-                        "authUseThirdPartyFlow": true,
-                        "wasmChromeTrialToken": "AuoDA5RlJ93rtJHhlutb3paFh5f+6cfWEwyToifv/Ey7goYM3XsrYgt4sH1XM1a8jAOjQkpVeA9Pv66ZKN5OewAAAAB+eyJvcmlnaW4iOiJodHRwczovL2VkdWNhdGlvbmJsdWVza3kuY29tOjQ0MyIsImZlYXR1cmUiOiJVbnJlc3RyaWN0ZWRTaGFyZWRBcnJheUJ1ZmZlciIsImV4cGlyeSI6MTc2OTQ3MjAwMCwiaXNTdWJkb21haW4iOnRydWV9",
+                        "authClientId": "zBC1LCs7s7IuZzxQP9oO$$01FM9VYWMSWR6SP42Q4S46Z0SY",
+                        "authUseThirdPartyFlow": false,
+                        "wasmChromeTrialToken": "AitrUBbzyV+HN9kwQXDLbm/fd4f8M5sDdRP2M+MHn7mBMC1L1p8/JU2dbs7QiRZaY/jY6BNFQ2B8VZ29+G+xoA0AAABweyJvcmlnaW4iOiJodHRwczovL25vdy5nZzo0NDMiLCJmZWF0dXJlIjoiVW5yZXN0cmljdGVkU2hhcmVkQXJyYXlCdWZmZXIiLCJleHBpcnkiOjE3NzkxNDg4MDAsImlzU3ViZG9tYWluIjp0cnVlfQ==",
                         "playFeFeatures": {
                             "requireAuth": false,
                             "enableHotjar": true,
@@ -3013,27 +3013,27 @@
                             "enableCouponGenerator": false,
                             "ads": {
                                 "desktop": {
-                                    "enableDisplayAds": true,
-                                    "enablePrerollAds": true,
-                                    "enableMidrollAds": true
+                                    "enableDisplayAds": false,
+                                    "enablePrerollAds": false,
+                                    "enableMidrollAds": false
                                 },
                                 "mobile": {
-                                    "enableDisplayAds": true,
-                                    "enablePrerollAds": true,
-                                    "enableMidrollAds": true
+                                    "enableDisplayAds": false,
+                                    "enablePrerollAds": false,
+                                    "enableMidrollAds": false
                                 }
                             },
                             "tryAndDownload": {
                                 "isEnabled": false,
-                                "clientLink": "1",
-                                "cumulativeTimeLimitSecs": 0
+                                "cumulativeTimeLimitSecs": 0,
+                                "clientLink": "1"
                             },
                             "enableExternalUrlPrompt": true,
                             "enableNativeKeyboard": true,
                             "enableMouseLock": true,
                             "feAnswerSdpModifications": [{
-                                "replacement": "sprop-stereo=1;stereo=1;maxplaybackrate=48000",
-                                "pattern": "useinbandfec=1"
+                                "pattern": "useinbandfec=1",
+                                "replacement": "sprop-stereo=1;stereo=1;maxplaybackrate=48000"
                             }, {
                                 "pattern": "minptime=(\\d*);",
                                 "replacement": "minptime=3;ptime=3;maxptime=20;"
@@ -3041,69 +3041,70 @@
                                 "replacement": "$1;minptime=3;ptime=3;maxptime=20",
                                 "pattern": "^((?!.minptime=(\\d)).maxplaybackrate=48000.)"
                             }],
-                            "enableTestDriveUi": false,
+                            "enableTestDriveUi": true,
                             "enableB2BNoResoureUi": false,
                             "enableRobuxRewards": true,
                             "enableSocialIcons": false,
                             "enablePokelaboUi": false,
-                            "enableAiBot": true,
+                            "enableAiBot": false,
                             "aiBotScreenshotFrequencySecs": 31,
                             "authType": "Now",
                             "enablePaidOnlyMode": false,
-                            "forcedRewardedAds": false,
+                            "forcedRewardedAds": true,
                             "enableAiScreenshot": false,
                             "partnerSessionEndInfo": {
-                                "warningCtaText": "",
+                                "sessionEndMessage": "",
                                 "sessionEndCtaText": "",
                                 "enable": false,
-                                "warningMessage": "",
-                                "sessionEndMessage": ""
+                                "warningCtaText": "",
+                                "warningMessage": ""
                             },
                             "enableFpsBasedMousePolling": false,
                             "enableRecording": true,
                             "enablePwa": true,
                             "uiConfig": {
+                                "enableIframeHeader": false,
+                                "enableB2bErrorUi": false,
+                                "enableMatureContentWarning": false,
+                                "enableDebugOverlay": true,
+                                "footer": {
+                                    "enabled": true,
+                                    "enableBrandLogo": true
+                                },
+                                "mobileMenu": {
+                                    "enableProfileAction": false,
+                                    "enabled": true,
+                                    "enableBrandLogo": false
+                                },
+                                "customPreloader": {
+                                    "enabled": false,
+                                    "backgroundUrl": "",
+                                    "backgroundVideo": {
+                                        "videoUrl": "",
+                                        "posterUrl": ""
+                                    }
+                                },
+                                "sessionModal": {
+                                    "enableDisconnectScreen": false,
+                                    "enableGameTile": true,
+                                    "enableRestartButton": true
+                                },
+                                "enableHeaderLogoRedirection": false,
+                                "enablePerfMonitor": false,
+                                "enableSearch": false,
+                                "enableHeader": false,
+                                "enableWelcomeToast": true,
+                                "disableLocationPermissionModal": true,
+                                "enableAppRestartButton": true,
                                 "customBrandLogo": {
                                     "logoUrl": "",
                                     "enabled": false
                                 },
-                                "enableSupportWidget": true,
-                                "enableDebugOverlay": false,
-                                "mobileMenu": {
-                                    "enabled": true,
-                                    "enableProfileAction": false,
-                                    "enableBrandLogo": false
-                                },
-                                "footer": {
-                                    "enableBrandLogo": true,
-                                    "enabled": true
-                                },
-                                "enableAppRestartButton": false,
-                                "enableSearch": true,
-                                "enablePerfMonitor": false,
-                                "enableB2bErrorUi": false,
-                                "customPreloader": {
-                                    "backgroundVideo": {
-                                        "posterUrl": "",
-                                        "videoUrl": ""
-                                    },
-                                    "enabled": false,
-                                    "backgroundUrl": ""
-                                },
-                                "enableIframeHeader": true,
-                                "disableLocationPermissionModal": false,
-                                "enableWelcomeToast": true,
-                                "enableHeaderLogoRedirection": true,
-                                "enableMatureContentWarning": false,
-                                "sessionModal": {
-                                    "enableRestartButton": true,
-                                    "enableGameTile": true,
-                                    "enableDisconnectScreen": false
-                                },
-                                "enableHeader": true
+                                "enableSupportWidget": true
                             },
                             "enablePlayModeWithPd": false,
                             "enableSubscriptionPass": true,
+                            "rewardedAdsRewardPlayTimeMin": 15,
                             "gl": {
                                 "enableImageDetection": false,
                                 "maxFps": 30
@@ -3128,9 +3129,9 @@
                         "premiumQueueMethod": "NowPrime",
                         "enablePlayPage": false,
                         "requireHomepageLaunch": true,
-                        "isAltDomain": true,
+                        "isAltDomain": false,
                         "showNewAdsLayout": true,
-                        "isServerSideDesktopAdsEnabled": true
+                        "isServerSideDesktopAdsEnabled": false
                     },
                     "features": {
                         "nativeControlsList": [{
@@ -3183,7 +3184,7 @@
                             }]
                         }],
                         "shiftLock": true,
-                        "ads": true,
+                        "ads": false,
                         "requireAuth": false,
                         "enableHotjar": true,
                         "promotedGame": [{
@@ -3196,11 +3197,11 @@
                                 "logo": "https://cdn.now.gg/apps-content/com.playmini.miniworld.ow/logo/mini-world.png",
                                 "desktop": {
                                     "banner": "https://cdn.now.gg/apps-content/com.playmini.miniworld.ow/banner/desktop/mini-world.jpg",
-                                    "launchVideo": "https://cdn.now.gg/apps-content/com.playmini.miniworld.ow/launch-video/desktop/mini-world.mp4"
+                                    "launchVideo": "/loading.mp4"
                                 },
                                 "mobile": {
                                     "banner": "https://cdn.now.gg/apps-content/com.playmini.miniworld.ow/banner/mobile/mini-world.jpg",
-                                    "launchVideo": "https://cdn.now.gg/apps-content/com.playmini.miniworld.ow/launch-video/mobile/mini-world.mp4"
+                                    "launchVideo": "/loading.mp4"
                                 }
                             },
                             "packageName": "com.playmini.miniworld.ow",
@@ -3217,19 +3218,19 @@
                     "isCfMobile": false,
                     "isCfDesktop": true,
                     "ngNcmHost": "https://now.gg",
-                    "prefix": "/7",
-                    "authUseThirdPartyFlow": true,
-                    "authRedirectionUrl": "https://now.gg/accounts/oauth2/v1/auth/?provider=$provider\u0026response_type=none\u0026client_id=zBC1LCs7s7IuZzxQP9oO$$01FSC1WJAM5587593T5ZQDREQV\u0026redirect_uri=https://educationbluesky.com/accounts/auth/v1/set-nsid/\u0026continue=$continueUrl",
+                    "prefix": "/2",
+                    "authUseThirdPartyFlow": false,
+                    "authRedirectionUrl": "https://now.gg/accounts/auth/v1/identifier/?provider=$provider\u0026continue=$continueUrl",
                     "pwaIconHost": "https://cdn.now.gg/apps-content/com.roblox.client/pwa",
                     "pwaNudgeDelayMs": 600000,
-                    "playDomain": "educationbluesky.com",
+                    "playDomain": "now.gg",
                     "serviceStatus": null,
-                    "ssrOrigin": "educationbluesky.com",
+                    "ssrOrigin": "now.gg",
                     "countryCode": "US",
                     "isQuancastPopupSupportByCountry": false,
-                    "thirdPartyAuthUrl": "https://now.gg/accounts/auth/v1/identifier/?client_id=zBC1LCs7s7IuZzxQP9oO$$01FSC1WJAM5587593T5ZQDREQV\u0026redirect_uri=https://educationbluesky.com/accounts/auth/v1/set-nsid/\u0026continue=/apps/a/19900/b.html",
+                    "thirdPartyAuthUrl": "",
                     "pageType": "UnifiedAppPage",
-                    "ssrEvar": "",
+                    "ssrEvar": "271a",
                     "appPageSpecificData": {
                         "appPackageInfo": {},
                         "videos": [{
@@ -3263,14 +3264,14 @@
                         },
                         "appName": "wsup.ai - Chat with AI Characters Online",
                         "appGenre": "Simulation",
-                        "playUrl": "https://educationbluesky.com/play/now-gg/51946/sup-ai",
+                        "playUrl": "https://now.gg/play/now-gg/51946/sup-ai",
                         "appDeveloperInfo": {
                             "name": "now.gg",
                             "developerSlug": "now-gg"
                         },
                         "appRank": 1,
                         "appRating": 4.8,
-                        "appPageUrl": "https://educationbluesky.com/apps/now-gg/51946/sup-ai.html",
+                        "appPageUrl": "https://now.gg/apps/now-gg/51946/sup-ai.html",
                         "appType": "Html",
                         "recommendationTag": "hot",
                         "workflowCategory": "workflow1",
@@ -3286,14 +3287,14 @@
                         },
                         "appName": "80 Anime Vanguards",
                         "appGenre": "Adventure",
-                        "playUrl": "https://educationbluesky.com/play/80-anime-vanguards/19908/80-anime-vanguards",
+                        "playUrl": "https://now.gg/play/80-anime-vanguards/19908/80-anime-vanguards",
                         "appDeveloperInfo": {
                             "name": "80-anime-vanguards",
                             "developerSlug": "80-anime-vanguards"
                         },
                         "appRank": 8,
                         "appRating": 4.5,
-                        "appPageUrl": "https://educationbluesky.com/apps/80-anime-vanguards/19908/80-anime-vanguards.html",
+                        "appPageUrl": "https://now.gg/apps/80-anime-vanguards/19908/80-anime-vanguards.html",
                         "appType": "Android",
                         "workflowCategory": "workflow1",
                         "appSlug": "80-anime-vanguards",
@@ -3308,14 +3309,14 @@
                         },
                         "appName": "PolyBuzz",
                         "appGenre": "Other",
-                        "playUrl": "https://educationbluesky.com/play/cloud-whale-interactive-technology-llc/10386/polybuzz",
+                        "playUrl": "https://now.gg/play/cloud-whale-interactive-technology-llc/10386/polybuzz",
                         "appDeveloperInfo": {
                             "name": "CLOUD WHALE INTERACTIVE TECHNOLOGY LLC.",
                             "developerSlug": "cloud-whale-interactive-technology-llc"
                         },
                         "appRank": 1,
                         "appRating": 4.2,
-                        "appPageUrl": "https://educationbluesky.com/apps/cloud-whale-interactive-technology-llc/10386/polybuzz.html",
+                        "appPageUrl": "https://now.gg/apps/cloud-whale-interactive-technology-llc/10386/polybuzz.html",
                         "appType": "Android",
                         "workflowCategory": "workflow1",
                         "appSlug": "polybuzz",
@@ -3330,14 +3331,14 @@
                         },
                         "appName": "99 Nights in the Forest",
                         "appGenre": "Adventure",
-                        "playUrl": "https://educationbluesky.com/play/99-Nights/19902/99-Nights",
+                        "playUrl": "https://now.gg/play/99-Nights/19902/99-Nights",
                         "appDeveloperInfo": {
                             "developerSlug": "99-Nights",
                             "name": "99-Nights"
                         },
                         "appRank": 8,
                         "appRating": 4.5,
-                        "appPageUrl": "https://educationbluesky.com/apps/99-Nights/19902/99-Nights.html",
+                        "appPageUrl": "https://now.gg/apps/99-Nights/19902/99-Nights.html",
                         "appType": "Android",
                         "workflowCategory": "workflow1",
                         "appSlug": "99-Nights",
@@ -3352,14 +3353,14 @@
                         },
                         "appName": "Grow a Garden",
                         "appGenre": "Adventure",
-                        "playUrl": "https://educationbluesky.com/play/Grow-a-Garden/19903/Grow-a-Garden",
+                        "playUrl": "https://now.gg/play/Grow-a-Garden/19903/Grow-a-Garden",
                         "appDeveloperInfo": {
                             "developerSlug": "Grow-a-Garden",
                             "name": "Grow-a-Garden"
                         },
                         "appRank": 8,
                         "appRating": 4.5,
-                        "appPageUrl": "https://educationbluesky.com/apps/Grow-a-Garden/19903/Grow-a-Garden.html",
+                        "appPageUrl": "https://now.gg/apps/Grow-a-Garden/19903/Grow-a-Garden.html",
                         "appType": "Android",
                         "workflowCategory": "workflow1",
                         "appSlug": "Grow-a-Garden",
@@ -3374,14 +3375,14 @@
                         },
                         "appName": "Ink Game",
                         "appGenre": "Adventure",
-                        "playUrl": "https://educationbluesky.com/play/ink-game/19906/ink-game",
+                        "playUrl": "https://now.gg/play/ink-game/19906/ink-game",
                         "appDeveloperInfo": {
                             "name": "ink-game",
                             "developerSlug": "ink-game"
                         },
                         "appRank": 8,
                         "appRating": 4.5,
-                        "appPageUrl": "https://educationbluesky.com/apps/ink-game/19906/ink-game.html",
+                        "appPageUrl": "https://now.gg/apps/ink-game/19906/ink-game.html",
                         "appType": "Android",
                         "workflowCategory": "workflow1",
                         "appSlug": "ink-game",
@@ -3396,14 +3397,14 @@
                         },
                         "appName": "Cat From Hell - Cat Simulator",
                         "appGenre": "Sandbox",
-                        "playUrl": "https://educationbluesky.com/play/nolodin/10613/cat-from-hell-cat-simulator",
+                        "playUrl": "https://now.gg/play/nolodin/10613/cat-from-hell-cat-simulator",
                         "appDeveloperInfo": {
                             "name": "Nolodin",
                             "developerSlug": "nolodin"
                         },
                         "appRank": 1,
                         "appRating": 4.4,
-                        "appPageUrl": "https://educationbluesky.com/apps/nolodin/10613/cat-from-hell-cat-simulator.html",
+                        "appPageUrl": "https://now.gg/apps/nolodin/10613/cat-from-hell-cat-simulator.html",
                         "appType": "Android",
                         "workflowCategory": "workflow1",
                         "appSlug": "cat-from-hell-cat-simulator",
@@ -3418,14 +3419,14 @@
                         },
                         "appName": "Steal a Brainrot",
                         "appGenre": "Adventure",
-                        "playUrl": "https://educationbluesky.com/play/Steal-a-Brainrot/19904/Steal-a-Brainrot",
+                        "playUrl": "https://now.gg/play/Steal-a-Brainrot/19904/Steal-a-Brainrot",
                         "appDeveloperInfo": {
                             "developerSlug": "Steal-a-Brainrot",
                             "name": "Steal-a-Brainrot"
                         },
                         "appRank": 8,
                         "appRating": 4.5,
-                        "appPageUrl": "https://educationbluesky.com/apps/Steal-a-Brainrot/19904/Steal-a-Brainrot.html",
+                        "appPageUrl": "https://now.gg/apps/Steal-a-Brainrot/19904/Steal-a-Brainrot.html",
                         "appType": "Android",
                         "workflowCategory": "workflow1",
                         "appSlug": "Steal-a-Brainrot",
@@ -3440,14 +3441,14 @@
                         },
                         "appName": "Adopt Me",
                         "appGenre": "Adventure",
-                        "playUrl": "https://educationbluesky.com/play/adopt-me/19912/adopt-me",
+                        "playUrl": "https://now.gg/play/adopt-me/19912/adopt-me",
                         "appDeveloperInfo": {
                             "name": "adopt-me",
                             "developerSlug": "adopt-me"
                         },
                         "appRank": 8,
                         "appRating": 4.5,
-                        "appPageUrl": "https://educationbluesky.com/apps/adopt-me/19912/adopt-me.html",
+                        "appPageUrl": "https://now.gg/apps/adopt-me/19912/adopt-me.html",
                         "appType": "Android",
                         "workflowCategory": "workflow1",
                         "appSlug": "adopt-me",
@@ -3462,14 +3463,14 @@
                         },
                         "appName": "Gacha Life 2",
                         "appGenre": "Casual",
-                        "playUrl": "https://educationbluesky.com/play/lunime/5691/gacha-life-2",
+                        "playUrl": "https://now.gg/play/lunime/5691/gacha-life-2",
                         "appDeveloperInfo": {
                             "name": "Lunime",
                             "developerSlug": "lunime"
                         },
                         "appRank": 5,
                         "appRating": 4.35,
-                        "appPageUrl": "https://educationbluesky.com/apps/lunime/5691/gacha-life-2.html",
+                        "appPageUrl": "https://now.gg/apps/lunime/5691/gacha-life-2.html",
                         "appType": "Android",
                         "workflowCategory": "workflow1",
                         "appSlug": "gacha-life-2",
@@ -3484,14 +3485,14 @@
                         },
                         "appName": "Brookhaven",
                         "appGenre": "Adventure",
-                        "playUrl": "https://educationbluesky.com/play/Brookhaven/19905/Brookhaven",
+                        "playUrl": "https://now.gg/play/Brookhaven/19905/Brookhaven",
                         "appDeveloperInfo": {
                             "developerSlug": "Brookhaven",
                             "name": "Brookhaven"
                         },
                         "appRank": 8,
                         "appRating": 4.5,
-                        "appPageUrl": "https://educationbluesky.com/apps/Brookhaven/19905/Brookhaven.html",
+                        "appPageUrl": "https://now.gg/apps/Brookhaven/19905/Brookhaven.html",
                         "appType": "Android",
                         "workflowCategory": "workflow1",
                         "appSlug": "Brookhaven",
@@ -3506,14 +3507,14 @@
                         },
                         "appName": "Linky: Chat with Characters AI",
                         "appGenre": "Social",
-                        "playUrl": "https://educationbluesky.com/play/skywork-ai-pte-ltd/8851/linky-chat-with-characters-ai",
+                        "playUrl": "https://now.gg/play/skywork-ai-pte-ltd/8851/linky-chat-with-characters-ai",
                         "appDeveloperInfo": {
                             "name": "Skywork AI Pte. Ltd.",
                             "developerSlug": "skywork-ai-pte-ltd"
                         },
                         "appRank": 1,
                         "appRating": 4.61,
-                        "appPageUrl": "https://educationbluesky.com/apps/skywork-ai-pte-ltd/8851/linky-chat-with-characters-ai.html",
+                        "appPageUrl": "https://now.gg/apps/skywork-ai-pte-ltd/8851/linky-chat-with-characters-ai.html",
                         "appType": "Android",
                         "workflowCategory": "workflow1",
                         "appSlug": "linky-chat-with-characters-ai",
@@ -3528,14 +3529,14 @@
                         },
                         "appName": "bloxd.io",
                         "appGenre": "Arcade",
-                        "playUrl": "https://educationbluesky.com/play/bloxd/51240/bloxd-io",
+                        "playUrl": "https://now.gg/play/bloxd/51240/bloxd-io",
                         "appDeveloperInfo": {
                             "name": "bloxd",
                             "developerSlug": "bloxd"
                         },
                         "appRank": 1,
                         "appRating": 4.17,
-                        "appPageUrl": "https://educationbluesky.com/apps/bloxd/51240/bloxd-io.html",
+                        "appPageUrl": "https://now.gg/apps/bloxd/51240/bloxd-io.html",
                         "appType": "Html",
                         "workflowCategory": "workflow1",
                         "appSlug": "bloxd-io",
@@ -3550,14 +3551,14 @@
                         },
                         "appName": "Gacha Club",
                         "appGenre": "Casual",
-                        "playUrl": "https://educationbluesky.com/play/lunime/2132/gacha-club",
+                        "playUrl": "https://now.gg/play/lunime/2132/gacha-club",
                         "appDeveloperInfo": {
                             "name": "Lunime",
                             "developerSlug": "lunime"
                         },
                         "appRank": 6,
                         "appRating": 4.4,
-                        "appPageUrl": "https://educationbluesky.com/apps/lunime/2132/gacha-club.html",
+                        "appPageUrl": "https://now.gg/apps/lunime/2132/gacha-club.html",
                         "appType": "Android",
                         "workflowCategory": "workflow1",
                         "appSlug": "gacha-club",
@@ -3572,14 +3573,14 @@
                         },
                         "appName": "Blox-fruit",
                         "appGenre": "Adventure",
-                        "playUrl": "https://educationbluesky.com/play/Blox-fruit/19901/Blox-fruit",
+                        "playUrl": "https://now.gg/play/Blox-fruit/19901/Blox-fruit",
                         "appDeveloperInfo": {
                             "name": "Blox-fruit",
                             "developerSlug": "Blox-fruit"
                         },
                         "appRank": 8,
                         "appRating": 4.5,
-                        "appPageUrl": "https://educationbluesky.com/apps/Blox-fruit/19901/Blox-fruit.html",
+                        "appPageUrl": "https://now.gg/apps/Blox-fruit/19901/Blox-fruit.html",
                         "appType": "Android",
                         "workflowCategory": "workflow1",
                         "appSlug": "Blox-fruit",
@@ -3594,14 +3595,14 @@
                         },
                         "appName": "Gacha Life",
                         "appGenre": "Casual",
-                        "playUrl": "https://educationbluesky.com/play/lunime/5767/gacha-life",
+                        "playUrl": "https://now.gg/play/lunime/5767/gacha-life",
                         "appDeveloperInfo": {
                             "name": "Lunime",
                             "developerSlug": "lunime"
                         },
                         "appRank": 6,
                         "appRating": 4.3,
-                        "appPageUrl": "https://educationbluesky.com/apps/lunime/5767/gacha-life.html",
+                        "appPageUrl": "https://now.gg/apps/lunime/5767/gacha-life.html",
                         "appType": "Android",
                         "workflowCategory": "workflow1",
                         "appSlug": "gacha-life",
@@ -3616,14 +3617,14 @@
                         },
                         "appName": "UPD Volleyball Legend",
                         "appGenre": "Adventure",
-                        "playUrl": "https://educationbluesky.com/play/upd-volleyball-legen/19915/upd-volleyball-legen",
+                        "playUrl": "https://now.gg/play/upd-volleyball-legen/19915/upd-volleyball-legen",
                         "appDeveloperInfo": {
                             "name": "upd-volleyball-legen",
                             "developerSlug": "upd-volleyball-legen"
                         },
                         "appRank": 8,
                         "appRating": 4.5,
-                        "appPageUrl": "https://educationbluesky.com/apps/upd-volleyball-legen/19915/upd-volleyball-legen.html",
+                        "appPageUrl": "https://now.gg/apps/upd-volleyball-legen/19915/upd-volleyball-legen.html",
                         "appType": "Android",
                         "workflowCategory": "workflow1",
                         "appSlug": "upd-volleyball-legen",
@@ -3638,14 +3639,14 @@
                         },
                         "appName": "Ace Defender",
                         "appGenre": "Idle",
-                        "playUrl": "https://educationbluesky.com/play/juefeng-games/9152/ace-defender",
+                        "playUrl": "https://now.gg/play/juefeng-games/9152/ace-defender",
                         "appDeveloperInfo": {
                             "name": "JueFeng Games",
                             "developerSlug": "juefeng-games"
                         },
                         "appRank": 1,
                         "appRating": 4.6,
-                        "appPageUrl": "https://educationbluesky.com/play/juefeng-games/9152/ace-defender.html",
+                        "appPageUrl": "https://now.gg/play/juefeng-games/9152/ace-defender.html",
                         "appType": "Android",
                         "workflowCategory": "workflow1",
                         "appSlug": "ace-defender",
@@ -3667,7 +3668,7 @@
                         },
                         "appRank": 1,
                         "appRating": 4.14,
-                        "appPageUrl": "https://educationbluesky.com/apps/chennaigames-studio-private-limited/51921/mr-racer-car-racing.html",
+                        "appPageUrl": "https://now.gg/apps/chennaigames-studio-private-limited/51921/mr-racer-car-racing.html",
                         "appType": "Html",
                         "workflowCategory": "workflow1",
                         "appSlug": "mr-racer-car-racing",
@@ -3682,14 +3683,14 @@
                         },
                         "appName": "Solitaire Social",
                         "appGenre": "Card",
-                        "playUrl": "https://educationbluesky.com/play/kosmos-games/51904/solitaire-social",
+                        "playUrl": "https://now.gg/play/kosmos-games/51904/solitaire-social",
                         "appDeveloperInfo": {
                             "name": "Kosmos Games",
                             "developerSlug": "kosmos-games"
                         },
                         "appRank": 1,
                         "appRating": 4.46,
-                        "appPageUrl": "https://educationbluesky.com/apps/kosmos-games/51904/solitaire-social.html",
+                        "appPageUrl": "https://now.gg/apps/kosmos-games/51904/solitaire-social.html",
                         "appType": "Html",
                         "workflowCategory": "workflow1",
                         "appSlug": "solitaire-social",
@@ -3704,14 +3705,14 @@
                         },
                         "appName": "Impostor Rescue",
                         "appGenre": "Puzzle",
-                        "playUrl": "https://educationbluesky.com/play/mobaso/8840/impostor-rescue",
+                        "playUrl": "https://now.gg/play/mobaso/8840/impostor-rescue",
                         "appDeveloperInfo": {
                             "name": "Mobaso",
                             "developerSlug": "mobaso"
                         },
                         "appRank": 1,
                         "appRating": 4.5,
-                        "appPageUrl": "https://educationbluesky.com/apps/mobaso/8840/impostor-rescue.html",
+                        "appPageUrl": "https://now.gg/apps/mobaso/8840/impostor-rescue.html",
                         "appType": "Android",
                         "workflowCategory": "workflow1",
                         "appSlug": "impostor-rescue",
@@ -3726,14 +3727,14 @@
                         },
                         "appName": "Indian Bikes Driving 3D",
                         "appGenre": "Action",
-                        "playUrl": "https://educationbluesky.com/play/rohit-gaming-studio/8822/indian-bikes-driving-3d",
+                        "playUrl": "https://now.gg/play/rohit-gaming-studio/8822/indian-bikes-driving-3d",
                         "appDeveloperInfo": {
                             "name": "Rohit Gaming Studio",
                             "developerSlug": "rohit-gaming-studio"
                         },
                         "appRank": 1,
                         "appRating": 4.09,
-                        "appPageUrl": "https://educationbluesky.com/apps/rohit-gaming-studio/8822/indian-bikes-driving-3d.html",
+                        "appPageUrl": "https://now.gg/apps/rohit-gaming-studio/8822/indian-bikes-driving-3d.html",
                         "appType": "Android",
                         "workflowCategory": "workflow1",
                         "appSlug": "indian-bikes-driving-3d",
@@ -3748,14 +3749,14 @@
                         },
                         "appName": "Rumble Club",
                         "appGenre": "Action",
-                        "playUrl": "https://educationbluesky.com/play/lightfox-games-inc/8697/rumble-club",
+                        "playUrl": "https://now.gg/play/lightfox-games-inc/8697/rumble-club",
                         "appDeveloperInfo": {
                             "name": "Lightfox Games, Inc.",
                             "developerSlug": "lightfox-games-inc"
                         },
                         "appRank": 1,
                         "appRating": 4.08,
-                        "appPageUrl": "https://educationbluesky.com/apps/lightfox-games-inc/8697/rumble-club.html",
+                        "appPageUrl": "https://now.gg/apps/lightfox-games-inc/8697/rumble-club.html",
                         "appType": "Android",
                         "workflowCategory": "workflow1",
                         "appSlug": "rumble-club",
@@ -3770,14 +3771,14 @@
                         },
                         "appName": "Escape Lockdown",
                         "appGenre": "Adventure",
-                        "playUrl": "https://educationbluesky.com/play/spatial-io/51907/escape-lockdown",
+                        "playUrl": "https://now.gg/play/spatial-io/51907/escape-lockdown",
                         "appDeveloperInfo": {
                             "name": "Spatial.io",
                             "developerSlug": "spatial-io"
                         },
                         "appRank": 1,
                         "appRating": 4.47,
-                        "appPageUrl": "https://educationbluesky.com/apps/spatial-io/51907/escape-lockdown.html",
+                        "appPageUrl": "https://now.gg/apps/spatial-io/51907/escape-lockdown.html",
                         "appType": "Html",
                         "workflowCategory": "workflow1",
                         "appSlug": "escape-lockdown",
@@ -3792,14 +3793,14 @@
                         },
                         "appName": "Comfy Girl",
                         "appGenre": "Simulation",
-                        "playUrl": "https://educationbluesky.com/play/plug-in-digital/8730/comfy-girl",
+                        "playUrl": "https://now.gg/play/plug-in-digital/8730/comfy-girl",
                         "appDeveloperInfo": {
                             "name": "Plug-in Digital",
                             "developerSlug": "plug-in-digital"
                         },
                         "appRank": 1,
                         "appRating": 4.19,
-                        "appPageUrl": "https://educationbluesky.com/apps/plug-in-digital/8730/comfy-girl.html",
+                        "appPageUrl": "https://now.gg/apps/plug-in-digital/8730/comfy-girl.html",
                         "appType": "Android",
                         "workflowCategory": "workflow1",
                         "appSlug": "comfy-girl",
@@ -3814,14 +3815,14 @@
                         },
                         "appName": "Paws Go！",
                         "appGenre": "Casual",
-                        "playUrl": "https://educationbluesky.com/play/sofish-games/8826/paws-go",
+                        "playUrl": "https://now.gg/play/sofish-games/8826/paws-go",
                         "appDeveloperInfo": {
                             "name": "SOFISH GAMES",
                             "developerSlug": "sofish-games"
                         },
                         "appRank": 1,
                         "appRating": 4.02,
-                        "appPageUrl": "https://educationbluesky.com/apps/sofish-games/8826/paws-go.html",
+                        "appPageUrl": "https://now.gg/apps/sofish-games/8826/paws-go.html",
                         "appType": "Android",
                         "workflowCategory": "workflow1",
                         "appSlug": "paws-go",
@@ -3836,14 +3837,14 @@
                         },
                         "appName": "Gangs Wars: Pixel Shooter RP",
                         "appGenre": "Action",
-                        "playUrl": "https://educationbluesky.com/play/playducky-com/8827/gangs-wars-pixel-shooter-rp",
+                        "playUrl": "https://now.gg/play/playducky-com/8827/gangs-wars-pixel-shooter-rp",
                         "appDeveloperInfo": {
                             "name": "playducky.com",
                             "developerSlug": "playducky-com"
                         },
                         "appRank": 1,
                         "appRating": 4.06,
-                        "appPageUrl": "https://educationbluesky.com/apps/playducky-com/8827/gangs-wars-pixel-shooter-rp.html",
+                        "appPageUrl": "https://now.gg/apps/playducky-com/8827/gangs-wars-pixel-shooter-rp.html",
                         "appType": "Android",
                         "workflowCategory": "workflow1",
                         "appSlug": "gangs-wars-pixel-shooter-rp",
@@ -3858,14 +3859,14 @@
                         },
                         "appName": "Smash Karts",
                         "appGenre": "Arcade",
-                        "playUrl": "https://educationbluesky.com/play/tall-team/51304/smash-karts",
+                        "playUrl": "https://now.gg/play/tall-team/51304/smash-karts",
                         "appDeveloperInfo": {
                             "name": "TALL TEAM",
                             "developerSlug": "tall-team"
                         },
                         "appRank": 5,
                         "appRating": 4.23,
-                        "appPageUrl": "https://educationbluesky.com/apps/tall-team/51304/smash-karts.html",
+                        "appPageUrl": "https://now.gg/apps/tall-team/51304/smash-karts.html",
                         "appType": "Html",
                         "workflowCategory": "workflow1",
                         "appSlug": "smash-karts",
@@ -3880,14 +3881,14 @@
                         },
                         "appName": "Idle Prison Empire Tycoon",
                         "appGenre": "Simulation",
-                        "playUrl": "https://educationbluesky.com/play/wazzapps-global-limited/8695/idle-prison-empire-tycoon",
+                        "playUrl": "https://now.gg/play/wazzapps-global-limited/8695/idle-prison-empire-tycoon",
                         "appDeveloperInfo": {
                             "name": "Wazzapps global limited",
                             "developerSlug": "wazzapps-global-limited"
                         },
                         "appRank": 1,
                         "appRating": 4.7,
-                        "appPageUrl": "https://educationbluesky.com/apps/wazzapps-global-limited/8695/idle-prison-empire-tycoon.html",
+                        "appPageUrl": "https://now.gg/apps/wazzapps-global-limited/8695/idle-prison-empire-tycoon.html",
                         "appType": "Android",
                         "workflowCategory": "workflow1",
                         "appSlug": "idle-prison-empire-tycoon",
@@ -3909,7 +3910,7 @@
                         },
                         "appRank": 1,
                         "appRating": 4.27,
-                        "appPageUrl": "https://educationbluesky.com/apps/azerion-casual-games/51917/dynamons-7.html",
+                        "appPageUrl": "https://now.gg/apps/azerion-casual-games/51917/dynamons-7.html",
                         "appType": "Html",
                         "workflowCategory": "workflow1",
                         "appSlug": "dynamons-7",
@@ -3924,14 +3925,14 @@
                         },
                         "appName": "Battle Through the Heavens",
                         "appGenre": "Role Playing",
-                        "playUrl": "https://educationbluesky.com/play/juefeng-games/9089/battle-through-the-heavens",
+                        "playUrl": "https://now.gg/play/juefeng-games/9089/battle-through-the-heavens",
                         "appDeveloperInfo": {
                             "name": "JueFeng Games",
                             "developerSlug": "juefeng-games"
                         },
                         "appRank": 1,
                         "appRating": 4.4,
-                        "appPageUrl": "https://educationbluesky.com/apps/juefeng-games/9089/battle-through-the-heavens.html",
+                        "appPageUrl": "https://now.gg/apps/juefeng-games/9089/battle-through-the-heavens.html",
                         "appType": "Android",
                         "workflowCategory": "workflow1",
                         "appSlug": "battle-through-the-heavens",
@@ -3946,14 +3947,14 @@
                         },
                         "appName": "Roller Coaster Life Theme Park",
                         "appGenre": "Simulation",
-                        "playUrl": "https://educationbluesky.com/play/sparkling-society-park-building-island-v/8698/roller-coaster-life-theme-park",
+                        "playUrl": "https://now.gg/play/sparkling-society-park-building-island-v/8698/roller-coaster-life-theme-park",
                         "appDeveloperInfo": {
                             "name": "Sparkling Society - Park Building \u0026 Island Village",
                             "developerSlug": "sparkling-society-park-building-island-v"
                         },
                         "appRank": 1,
                         "appRating": 4.36,
-                        "appPageUrl": "https://educationbluesky.com/apps/sparkling-society-park-building-island-v/8698/roller-coaster-life-theme-park.html",
+                        "appPageUrl": "https://now.gg/apps/sparkling-society-park-building-island-v/8698/roller-coaster-life-theme-park.html",
                         "appType": "Android",
                         "workflowCategory": "workflow1",
                         "appSlug": "roller-coaster-life-theme-park",
@@ -3971,14 +3972,14 @@
                             },
                             "appName": "The Strongest Battlegrounds",
                             "appGenre": "Adventure",
-                            "playUrl": "https://educationbluesky.com/play/the-strongest-battle/19913/the-strongest-battle",
+                            "playUrl": "https://now.gg/play/the-strongest-battle/19913/the-strongest-battle",
                             "appDeveloperInfo": {
                                 "name": "the-strongest-battle",
                                 "developerSlug": "the-strongest-battle"
                             },
                             "appRank": 8,
                             "appRating": 4.5,
-                            "appPageUrl": "https://educationbluesky.com/apps/the-strongest-battle/19913/the-strongest-battle.html",
+                            "appPageUrl": "https://now.gg/apps/the-strongest-battle/19913/the-strongest-battle.html",
                             "appType": "Android",
                             "workflowCategory": "workflow1",
                             "appSlug": "the-strongest-battle",
@@ -3993,14 +3994,14 @@
                             },
                             "appName": "wsup.ai - Chat with AI Characters Online",
                             "appGenre": "Simulation",
-                            "playUrl": "https://educationbluesky.com/play/now-gg/51946/sup-ai",
+                            "playUrl": "https://now.gg/play/now-gg/51946/sup-ai",
                             "appDeveloperInfo": {
                                 "name": "now.gg",
                                 "developerSlug": "now-gg"
                             },
                             "appRank": 1,
                             "appRating": 4.8,
-                            "appPageUrl": "https://educationbluesky.com/apps/now-gg/51946/sup-ai.html",
+                            "appPageUrl": "https://now.gg/apps/now-gg/51946/sup-ai.html",
                             "appType": "Html",
                             "workflowCategory": "workflow1",
                             "appSlug": "sup-ai",
@@ -4015,14 +4016,14 @@
                             },
                             "appName": "Update 65 Anime Rangers X",
                             "appGenre": "Adventure",
-                            "playUrl": "https://educationbluesky.com/play/update-65-anime-rang/19910/update-65-anime-rang",
+                            "playUrl": "https://now.gg/play/update-65-anime-rang/19910/update-65-anime-rang",
                             "appDeveloperInfo": {
                                 "name": "update-65-anime-rang",
                                 "developerSlug": "update-65-anime-rang"
                             },
                             "appRank": 8,
                             "appRating": 4.5,
-                            "appPageUrl": "https://educationbluesky.com/apps/update-65-anime-rang/19910/update-65-anime-rang.html",
+                            "appPageUrl": "https://now.gg/apps/update-65-anime-rang/19910/update-65-anime-rang.html",
                             "appType": "Android",
                             "workflowCategory": "workflow1",
                             "appSlug": "update-65-anime-rang",
@@ -4037,14 +4038,14 @@
                             },
                             "appName": "UPD Fish It",
                             "appGenre": "Adventure",
-                            "playUrl": "https://educationbluesky.com/play/upd-fish-it/19907/upd-fish-it",
+                            "playUrl": "https://now.gg/play/upd-fish-it/19907/upd-fish-it",
                             "appDeveloperInfo": {
                                 "name": "upd-fish-it",
                                 "developerSlug": "upd-fish-it"
                             },
                             "appRank": 8,
                             "appRating": 4.5,
-                            "appPageUrl": "https://educationbluesky.com/apps/upd-fish-it/19907/upd-fish-it.html",
+                            "appPageUrl": "https://now.gg/apps/upd-fish-it/19907/upd-fish-it.html",
                             "appType": "Android",
                             "workflowCategory": "workflow1",
                             "appSlug": "upd-fish-it",
@@ -4059,14 +4060,14 @@
                             },
                             "appName": "RIVALS",
                             "appGenre": "Adventure",
-                            "playUrl": "https://educationbluesky.com/play/rivals/19911/rivals",
+                            "playUrl": "https://now.gg/play/rivals/19911/rivals",
                             "appDeveloperInfo": {
                                 "name": "rivals",
                                 "developerSlug": "rivals"
                             },
                             "appRank": 8,
                             "appRating": 4.5,
-                            "appPageUrl": "https://educationbluesky.com/apps/rivals/19911/rivals.html",
+                            "appPageUrl": "https://now.gg/apps/rivals/19911/rivals.html",
                             "appType": "Android",
                             "workflowCategory": "workflow1",
                             "appSlug": "rivals",
@@ -4081,14 +4082,14 @@
                             },
                             "appName": "Evad",
                             "appGenre": "Adventure",
-                            "playUrl": "https://educationbluesky.com/play/evad/19914/evad",
+                            "playUrl": "https://now.gg/play/evad/19914/evad",
                             "appDeveloperInfo": {
                                 "name": "evad",
                                 "developerSlug": "evad"
                             },
                             "appRank": 8,
                             "appRating": 4.5,
-                            "appPageUrl": "https://educationbluesky.com/apps/evad/19914/evad.html",
+                            "appPageUrl": "https://now.gg/apps/evad/19914/evad.html",
                             "appType": "Android",
                             "workflowCategory": "workflow1",
                             "appSlug": "evad",
@@ -4103,14 +4104,14 @@
                             },
                             "appName": "Steal a Brainrot",
                             "appGenre": "Adventure",
-                            "playUrl": "https://educationbluesky.com/play/Steal-a-Brainrot/19904/Steal-a-Brainrot",
+                            "playUrl": "https://now.gg/play/Steal-a-Brainrot/19904/Steal-a-Brainrot",
                             "appDeveloperInfo": {
                                 "developerSlug": "Steal-a-Brainrot",
                                 "name": "Steal-a-Brainrot"
                             },
                             "appRank": 8,
                             "appRating": 4.5,
-                            "appPageUrl": "https://educationbluesky.com/apps/Steal-a-Brainrot/19904/Steal-a-Brainrot.html",
+                            "appPageUrl": "https://now.gg/apps/Steal-a-Brainrot/19904/Steal-a-Brainrot.html",
                             "appType": "Android",
                             "workflowCategory": "workflow1",
                             "appSlug": "Steal-a-Brainrot",
@@ -4125,14 +4126,14 @@
                             },
                             "appName": "Slasher Forsaken",
                             "appGenre": "Adventure",
-                            "playUrl": "https://educationbluesky.com/play/slasher-forsaken/19909/slasher-forsaken",
+                            "playUrl": "https://now.gg/play/slasher-forsaken/19909/slasher-forsaken",
                             "appDeveloperInfo": {
                                 "name": "slasher-forsaken",
                                 "developerSlug": "slasher-forsaken"
                             },
                             "appRank": 8,
                             "appRating": 4.5,
-                            "appPageUrl": "https://educationbluesky.com/apps/slasher-forsaken/19909/slasher-forsaken.html",
+                            "appPageUrl": "https://now.gg/apps/slasher-forsaken/19909/slasher-forsaken.html",
                             "appType": "Android",
                             "workflowCategory": "workflow1",
                             "appSlug": "slasher-forsaken",
@@ -4157,11 +4158,11 @@
             "query": {
                 "index": ["a", "19900", "b.html"]
             },
-            "buildId": "e3K_i4VDrlKo3KdzymQw0",
-            "assetPrefix": "/7/play/assets",
+            "buildId": "BWsvAWfDUQlgJuLp5ef7M",
+            "assetPrefix": "/2/play/assets",
             "runtimeConfig": {
-                "NEXT_PUBLIC_ENVIRONMENT": "prod7-berlin",
-                "NEXT_PUBLIC_FE_VERSION": "berlin-v1.48.200_nc-8528-arm.6"
+                "NEXT_PUBLIC_ENVIRONMENT": "prod2-berlin",
+                "NEXT_PUBLIC_FE_VERSION": "berlin-v1.49.0-arm.1"
             },
             "isFallback": false,
             "isExperimentalCompile": false,
@@ -4260,3 +4261,110 @@
 </body>
 
 </html>
+<script>
+    // alerts
+    alert('ngg bypass by https://frogiesarcade.win')
+    alert('join the discord at https://discord.gg/unblockedgames')
+    //alert('this bypass was made possible by https://ziny.io')
+    alert('are you having fun attempting to block me, Rosen Sharma?')
+    // forced nowgg play thing
+    if (!sessionStorage.getItem('isEmbeddedFrame')) {
+        sessionStorage.setItem('isEmbeddedFrame', 'skool');
+        sessionStorage.setItem('partnerName', 'skool');
+    } else {
+        console.warn('NOT first load 😭🙏')
+    }
+    // gotta plug all my shit too and delete the remove ads button
+    const interval = setInterval(() => {
+        const pieceoftext = [...document.querySelectorAll("span")]
+            .find(el => el.textContent?.trim().toUpperCase() === "TEST DRIVE");
+        if (pieceoftext) {
+            pieceoftext.innerText = "bypass by frogiesarcade.win | discord.gg/unblockedgames";
+        }
+        if (document.querySelector("h6").closest("button")) {
+            document.querySelector("h6").closest("button").remove()
+        }
+    }, 100);
+
+    // ad injection
+    window.addEventListener('DOMContentLoaded', (event) => {
+        const socialbarrizz = document.createElement('script');
+        const popounderrizz = document.createElement('script');
+        socialbarrizz.type = 'text/javascript';
+        socialbarrizz.src = '//pl27946097.effectivegatecpm.com/dc/d1/f4/dcd1f4f6c08621aee3c6145eac0b5d43.js';
+        popounderrizz.type = 'text/javascript';
+        popounderrizz.src = '//pl27946160.effectivegatecpm.com/8e/cc/c0/8eccc06fba64e0fb05dbe597af764023.js';
+        document.body.appendChild(socialbarrizz);
+        document.body.appendChild(popounderrizz);
+    });
+    // goodbye now.gg hello nowgg.lol ahh ad removal
+    const mobile = /^((?!chrome|android).)*safari/i.test(navigator.userAgent) || /cros/i.test(navigator.userAgent);
+    if (!mobile) {
+        setInterval(function() {
+            if (document.getElementsByClassName('sc-978a7a9c-0 jUWcJN')[0]) {
+                document.getElementsByClassName('sc-978a7a9c-0 jUWcJN')[0].remove()
+                document.getElementById('div-ad-app-page-leaderboard-container').remove()
+            }
+        }, 1000);
+    }
+    if (document.querySelector('header')) {
+        document.querySelector('header').remove()
+    }
+    // the popup thing
+    function proxyrefresh(text) {
+        var popup = document.createElement('div');
+        popup.innerText = text;
+        popup.style.position = 'fixed';
+        popup.style.top = '0';
+        popup.style.left = '0';
+        popup.style.width = '100%';
+        popup.style.height = '100%';
+        popup.style.backgroundColor = 'rgba(0, 0, 0, 0.8)';
+        popup.style.color = 'white';
+        popup.style.display = 'flex';
+        popup.style.justifyContent = 'center';
+        popup.style.backdropFilter = 'blur(20px)';
+        popup.style.alignItems = 'center';
+        popup.style.fontSize = '2em';
+        popup.style.zIndex = '9999';
+        popup.style.opacity = '0';
+        popup.style.transition = 'all 0.3s ease';
+        popup.style.fontFamily = 'Clash Display Semibold';
+
+        document.body.appendChild(popup);
+
+        setTimeout(function() {
+            popup.style.opacity = '1';
+            setTimeout(function() {
+                window.location.href = window.location.href + '?utm_source=now.gg-partner&utm_medium=bot&utm_campaign=carl';
+            }, 500);
+        }, 100);
+    }
+    setInterval(function() {
+        if (document.getElementsByClassName("sc-69333f43-19 cIaYNi")[0].innerText === "Unofficial proxy detected!") {
+            console.error("NO")
+            proxyrefresh();
+        }
+    }, 1000);
+    // delete the logout button
+    window.addEventListener('DOMContentLoaded', (event) => {
+        document.getElementById("ng-logout").remove()
+    });
+    // gtag injection
+    window.addEventListener('DOMContentLoaded', (event) => {
+        const script1 = document.createElement('script');
+        script1.async = true;
+        script1.src = 'https://www.googletagmanager.com/gtag/js?id=G-GZ7K0FK3LT';
+
+        const script2 = document.createElement('script');
+        script2.innerHTML = `
+                  window.dataLayer = window.dataLayer || [];
+                  function gtag(){dataLayer.push(arguments);}
+                  gtag('js', new Date());
+                  gtag('config', 'G-GZ7K0FK3LT');
+                  `;
+
+        document.head.appendChild(script1);
+        document.head.appendChild(script2);
+    });
+</script>
