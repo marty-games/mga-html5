@@ -1,10 +1,12 @@
-<!doctype html>
+<!-- Ported by Genizy -->
+<!DOCTYPE html>
 <html lang="en-us">
 
 <head>
+    <base href="https://cdn.jsdelivr.net/gh/marty-games/mga-html5@main/nazi-zombies-portable/">
     <script>
         function mergeFiles(fileParts, cb) {
-            cb = cb === null ? function () {} : cb;
+            cb = cb === null ? function() {} : cb;
             return new Promise((resolve, reject) => {
                 let buffers = [];
 
@@ -33,7 +35,7 @@
             return parts;
         }
     </script>
-    <base href="https://cdn.jsdelivr.net/gh/genizy/google-class@4e883d91f824d0630b8f00e845885e6daaeaae55/nazi-zombies-portable/">
+
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta name=viewport content="width=device-width, initial-scale=1">
@@ -95,14 +97,14 @@
                     "nzp/game.pk3": gameUrl,
                     "nzp/progs.pk3": "nzp/progs.pk3"
                 },
-                print: function (msg) {
+                print: function(msg) {
                     console.log(msg);
                 },
-                printErr: function (text) {
+                printErr: function(text) {
                     console.log(text);
                 },
                 canvas: document.getElementById('canvas'),
-                setStatus: function (text) {
+                setStatus: function(text) {
                     if (Module.setStatus.interval) clearInterval(Module.setStatus.interval);
                     var m = text.match(/([^(]+)\((\d+(\.\d+)?)\/(\d+)\)/);
                     var statusElement = document.getElementById('status');
@@ -121,12 +123,12 @@
                     statusElement.hidden = text.length == 0;
                 },
                 totalDependencies: 0,
-                monitorRunDependencies: function (left) {
+                monitorRunDependencies: function(left) {
                     this.totalDependencies = Math.max(this.totalDependencies, left);
                     Module.setStatus(left ? 'Preparing... (' + (this.totalDependencies - left) + '/' + this.totalDependencies + ')' : 'All downloads complete.');
                 },
                 postRun: [
-                    function () {
+                    function() {
                         if (Module["sched"] === undefined) {
                             alert("Unable to initialise. You may need to restart your browser. If you get this often and inconsistently, consider using a 64bit browser instead.");
                             Module.setStatus("Initialisation Failure");
@@ -145,7 +147,7 @@
                 s.setAttribute('src', "ftewebgl.js");
                 s.setAttribute('type', "text/javascript");
                 s.setAttribute('charset', "utf-8");
-                s.addEventListener('error', function () {
+                s.addEventListener('error', function() {
                     alert("Oh noes! we got an error!");
                     Module.setStatus("Unable to download engine javascript");
                 }, false);
@@ -182,7 +184,7 @@
 
             function scanfiles(item, path) {
                 if (item.isFile) {
-                    item.file(function (f) {
+                    item.file(function(f) {
                         let n = fixupfilepath(f.name, path);
                         Module.files[n] = f.arrayBuffer();
                         Module.files[n].then(buf => {
@@ -192,7 +194,7 @@
                     });
                 } else if (item.isDirectory) {
                     var dirReader = item.createReader();
-                    dirReader.readEntries(function (entries) {
+                    dirReader.readEntries(function(entries) {
                         for (var i = 0; i < entries.length; i++) scanfiles(entries[i], path + item.name + "/");
                     });
                 }
