@@ -3526,7 +3526,7 @@
                     fill(0, 0, 0);
                     textSize(75);
                     ctx.textAlign = 'center';
-                    text("Minecraft", width / 2, 100);
+                    text("MineKhan", width / 2, 100);
 
                     if (screen === "main menu") {
                         fill(51, 51, 51);
