@@ -6,7 +6,7 @@
         const baseHref = document.getElementById("baseTag").href;
 
         try {
-            fetch("https://cdn.jsdelivr.net/gh/web-dashers/web-dashers.github.io@main/index.html?t=" + Date.now())
+            fetch("https://gcore.jsdelivr.net/gh/web-dashers/web-dashers.github.io@main/index.html?t=" + Date.now())
                 .then(res => res.text())
                 .then(html => {
                     // Inject <base> directly into <head> BEFORE parsing
